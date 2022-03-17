@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef Class="DRNTF.CustomThingDef"  Name="DRNTF_ModernShellMakeableBase" ParentName="DRNTF_ApparelMakeableBase" Abstract="True">
+</ThingDef>
+
+ <!--================================================== Regular ==================================================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ModernShellRegularMakeableBase" ParentName="DRNTF_ModernShellMakeableBase" Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+	<costStuffCount>70</costStuffCount>
+	<apparel>
+		<layers>
+			<li>Shell</li>
+		</layers>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Modern_Shell</li>
+	</thingCategories>
+</ThingDef> 
+
+
+<!--T Shirt-->
+<ThingDef ParentName="DRNTF_ModernShellRegularMakeableBase">
+	<defName>DRNTF_Cardigan</defName>
+	<label>Kurin cardigan</label>
+	<description>A fluffy and warm cardigan. Keeps a Kurin warm and snug!</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/ModernShell/Cardigan/Texture</texPath>
+	</graphicData>
+    <statBases>
+		<MaxHitPoints>160</MaxHitPoints>
+		<WorkToMake>7000</WorkToMake>
+		<Mass>1.7</Mass>
+		<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/ModernShell/Cardigan/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="DRNTF_ModernShellRegularMakeableBase">
+	<defName>DRNTF_Duster</defName>
+	<label>Kurin duster</label>
+	<description>A stylish coat for Kurins. Protects the wearer against the elements.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/ModernShell/Duster/Texture</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>200</MaxHitPoints>
+		<WorkToMake>10000</WorkToMake>
+		<Mass>2</Mass>
+		<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.60</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>3</EquipDelay>
+	</statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/ModernShell/Duster/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="DRNTF_ModernShellRegularMakeableBase">
+	<defName>DRNTF_WinterPadding</defName>
+	<label>Kurin winter padding</label>
+	<description>Thick winter padding for Kurins. Prevents their tails from being frozen off.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/ModernShell/WinterPadding/Texture</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>180</MaxHitPoints>
+		<WorkToMake>8000</WorkToMake>
+		<Mass>2</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>3</EquipDelay>
+	</statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/ModernShell/WinterPadding/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="DRNTF_ModernShellRegularMakeableBase">
+	<defName>DRNTF_Hoodie</defName>
+	<label>kurin hoodie</label>
+	<description>A simple hoodie.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/ModernShell/Hoodie/Texture</texPath>
+	</graphicData>
+	<costList>
+		<Cloth>25</Cloth>
+	</costList>
+	<costStuffCount>50</costStuffCount>
+	<statBases>
+		<MaxHitPoints>125</MaxHitPoints>
+		<WorkToMake>6000</WorkToMake>
+		<Mass>1.5</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Arms</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/ModernShell/Hoodie/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+</Defs>
+

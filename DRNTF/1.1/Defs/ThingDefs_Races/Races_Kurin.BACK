@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>DRNTF_Race</defName>
+    <label>Kurin</label>
+	<description>Kurins are vat grown genetically engineered humans on one of the many glitterworlds. Designed to be the perfect mate, they are obsessively submissive and devoted, totally without jealousy or self-regard, artistically inclined and endlessly cheerful. Due to their sheltered lives, Kurins are non-violent and the simpliest of bruises can incapacitate them. However, due to their training and genetic modifications, they make perfect house keepers for your colony.</description>
+<!--=============================================================================================================================-->
+    <alienRace>
+		<generalSettings>
+			<maleGenderProbability>0</maleGenderProbability>
+			<immuneToAge>true</immuneToAge>
+            <humanRecipeImport>true</humanRecipeImport>
+			<forcedRaceTraitEntries>
+				<li>
+					<defName>Beauty</defName>
+					<degree>2</degree>
+					<chance>100</chance>
+				</li>
+				<li>
+					<defName>Bisexual</defName>
+					<chance>10</chance>
+				</li>
+				<li>
+					<defName>Kind</defName>
+					<chance>20</chance>
+				</li>
+			</forcedRaceTraitEntries>
+			<disallowedTraits>
+				<li>Asexual</li>
+				<li>ShootingAccuracy</li>
+				<li>Pyromaniac</li>
+				<li>CreepyBreathing</li>
+				<li>DislikesWomen</li>
+				<li>DrugDesire</li>
+				<li>Abrasive</li>
+				<li>AnnoyingVoice</li>
+				<li>DislikesMen</li>
+				<li>BloodLust</li>
+				<li>Jealous</li>
+				<li>Greedy</li>
+				<li>Psychopath</li>
+				<li>Wimp</li>
+				<li>SlowLearner</li>
+			</disallowedTraits>
+            <factionRelations>
+                <li>
+                    <factions>
+                       <li>Kurin_Faction</li>
+                    </factions>
+                    <goodwill>
+                       <min>100</min>
+                       <max>100</max>
+                    </goodwill>
+                </li>
+            </factionRelations>
+			<maxDamageForSocialfight>2</maxDamageForSocialfight>
+		<alienPartGenerator>
+<!--=============================================================================================================================-->
+			<headOffset>(0.0, -0.0)</headOffset>
+			<aliencrowntypes>
+				<li>Average_Normal</li>
+				<li>Average_Pointy</li>
+				<li>Average_Wild</li>
+			</aliencrowntypes>
+			<alienbodytypes>
+				<li>Female</li>
+			</alienbodytypes>
+				<useGenderedHeads>false</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
+			<bodyAddons>
+				<!--오른쪽귀A-->
+				<li>
+					<path>Things/Kurin/Tails/Texture</path>
+					<bodyPart>DRNTF_Tail</bodyPart>
+					<useSkinColor>false</useSkinColor>
+					<inFrontOfBody>false</inFrontOfBody>
+					<drawnInBed>false</drawnInBed>
+					<offsets>
+					<south>
+						<bodyTypes>
+						<Female>(-0.4029904,0.3515113)</Female>
+						</bodyTypes>
+					</south>
+					<north>
+						<bodyTypes>
+						<Female>(0,0.617363)</Female>
+						</bodyTypes>
+					</north>
+					<east>
+						<bodyTypes>
+						<Female>(-0.4136978,0.347267)</Female>
+						</bodyTypes>
+					</east>
+					</offsets>
+				</li>
+				<!--오른쪽귀A-->
+				<li>
+				<path>Things/Kurin/EarL/Texture</path>
+				<bodyPart>left ear</bodyPart>				
+				<inFrontOfBody>true</inFrontOfBody>
+				<useSkinColor>false</useSkinColor>
+				<drawSize>1</drawSize>
+				<angle>0</angle>
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Female>(-0.42,0.56)</Female>
+						</bodyTypes>
+						<crownTypes>
+							<Normal_Average>(0,0)</Normal_Average>
+						</crownTypes>
+					</south>
+					<north>
+						<bodyTypes>
+							<Female>(-0.0,0.89)</Female>
+						</bodyTypes>
+						<crownTypes>
+							<Normal_Average>(0,0)</Normal_Average>
+						</crownTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Female>(-0.53,0.56)</Female>
+						</bodyTypes>
+						<crownTypes>
+							<Normal_Average>(0,0)</Normal_Average>
+						</crownTypes>
+					</east>
+				</offsets>
+				</li>
+				<!--오른쪽귀A-->
+				<li>
+				<path>Things/Kurin/EarR/Texture</path>
+				<bodyPart>right ear</bodyPart>				
+				<inFrontOfBody>true</inFrontOfBody>
+				<useSkinColor>false</useSkinColor>
+				<drawSize>1</drawSize>
+				<angle>0</angle>
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Female>(-0.42,0.56)</Female>
+						</bodyTypes>
+						<crownTypes>
+							<Normal_Average>(0,0)</Normal_Average>
+						</crownTypes>
+					</south>
+					<north>
+						<bodyTypes>
+							<Female>(-0.0,0.89)</Female>
+						</bodyTypes>
+						<crownTypes>
+							<Normal_Average>(0,0)</Normal_Average>
+						</crownTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Female>(-0.53,0.56)</Female>
+						</bodyTypes>
+						<crownTypes>
+							<Normal_Average>(0,0)</Normal_Average>
+						</crownTypes>
+					</east>
+				</offsets>
+				</li>
+			</bodyAddons>
+<!--=============================================================================================================================-->
+			<alienhaircolorgen Class="ColorGenerator_Options">
+				<options>
+					<!--Common-->
+                    <li>
+                        <weight>10</weight> <!-- Name=(Mango Tango) -->
+                        <only>RGBA(0.84,0.50,0.02,1)</only> <!-- RGB=(214.2,127.5,5.1) #D67F05 -->
+                    </li>
+                    <li>
+                        <weight>10</weight> <!-- Name=(Tenne (Tawny)) -->
+                        <only>RGBA(0.83,0.36,0.03,1)</only> <!-- RGB=(211,93,8) #D35D08 -->
+                    </li>
+                    <li>
+                        <weight>10</weight> <!-- Name=(Russet) -->
+                        <only>RGBA(0.48,0.25,0.09,1)</only> <!-- RGB=(122,63,22) #7A3F16 -->
+                    </li>
+                    <li>
+                        <weight>10</weight> <!-- Name=(Fuel Yellow) -->
+                        <only>RGBA(0.79,0.60,0.19,1)</only> <!-- RGB=(201,152,48) #C99830 -->
+                    </li>
+                    <li>
+                        <weight>10</weight> <!-- Name=(Chocolate) -->
+                        <only>RGBA(0.80,0.42,0.11,1)</only> <!-- RGB=(204,107,28) #CC6B1C -->
+                    </li>
+                    <li>
+                        <weight>10</weight> <!-- Name=(Metalic Gold) -->
+                        <only>RGBA(0.84,0.69,0.27,1)</only> <!-- RGB=(214,175,70) #D6AF46 -->
+                    </li>
+                    <li>
+                        <weight>10</weight> <!-- Name=(Raw Umber) -->
+                        <only>RGBA(0.43,0.27,0.06,1)</only> <!-- RGB=(109,68,15) #6D440F -->
+                    </li>
+					<!--Uncommon-->
+                    <li>
+                        <weight>5</weight> <!-- Name=(Vermilion) -->
+                        <only>RGBA(0.95,0.30,0.01,1)</only> <!-- RGB=(242,76,4) #F24C04 -->
+                    </li>
+                    <li>
+                        <weight>5</weight> <!-- Name=(Charm) -->
+                        <only>RGBA(0.80,0.39,0.49,1)</only> <!-- RGB=(204,99,124) #CC637C -->
+                    </li>
+                    <li>
+                        <weight>5</weight> <!-- Name=(Deep Cerise) -->
+                        <only>RGBA(0.87,0.23,0.49,1)</only> <!-- RGB=(223,58,124) #DF3A7C -->
+                    </li>
+                    <li>
+                        <weight>5</weight> <!-- Name=(Royal Purple) -->
+                        <only>RGBA(0.42,0.23,0.59,1)</only> <!-- RGB=(108,58,151) #6C3A97 -->
+                    </li>
+                    <li>
+                        <weight>5</weight> <!-- Name=(Asparagus) -->
+                        <only>RGBA(0.46,0.57,0.32,1)</only> <!-- RGB=(118,146,82) #769252 -->
+                    </li>
+                    <li>
+                        <weight>5</weight> <!-- Name=(Downy) -->
+                        <only>RGBA(0.46,0.86,0.78,1)</only> <!-- RGB=(118,219,200) #76DBC8 -->
+                    </li>
+					<!-- black -->
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.2, 0.2, 0.2, 1.000)</only>
+					</li>
+					<!-- black -->
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.309, 0.282, 0.259, 1.000)</only>
+					</li>
+					<!-- brown -->
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.251, 0.196, 0.153, 1.000)</only>
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.3130, 0.196, 0.094, 1.000)</only>
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.345, 0.227, 0.133, 1.000)</only>
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.510, 0.329, 0.2, 1.000)</only>
+					</li>
+					<!-- blondes-->
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.753, 0.576, 0.321, 1.000)</only>
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.949, 0.784, 0.588, 1.000)</only>
+					</li>
+					<!-- pastelPink1 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(1.000, 0.710, 0.910, 1.000)</only>
+					</li>
+					<!-- pastelPink2 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.941, 1.000, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPink3 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.961, 0.961, 0.863, 1.000)</only>
+					</li>
+					<!-- pastelPink4 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.988, 0.761, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPink5 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.965, 0.651, 1.000, 1.000)</only>					
+					</li>
+					<!-- pastelPurple1 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.698, 0.553, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPurple2 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.773, 0.639, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPurple3 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.835, 0.667, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPurple4 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.925, 0.831, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPurple5 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.984, 0.894, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPurBlue1 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.863, 0.827, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPurBlue2 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.655, 0.604, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPurBlue3 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.710, 0.725, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPurBlue4 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.592, 0.635, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelPurBlue5 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.686, 0.796, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelGreen1 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.686, 0.973, 0.859, 1.000)</only>
+					</li>
+					<!-- pastelBlue1 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.769, 0.980, 0.973, 1.000)</only>
+					</li>
+					<!-- pastelBlue2 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.522, 0.890, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelBlue3 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.675, 0.906, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelBlue4 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.431, 0.710, 1.000, 1.000)</only>
+					</li>
+					<!-- pastelGreen2 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.749, 0.988, 0.776, 1.000)</only>
+					</li>
+					<!-- pastelGreen3 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.859, 1.000, 0.839, 1.000)</only>
+					</li>
+					<!-- pastelGreen4 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.953, 1.000, 0.890, 1.000)</only>
+					</li>
+					<!-- pastelGreen5 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(0.906, 1.000, 0.675, 1.000)</only>
+					</li>
+					<!-- pastelYellow1 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(1.000, 1.000, 0.820, 1.000)</only>
+					</li>
+					<!-- pastelRed1 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(1.000, 0.788, 0.871, 1.000)</only>
+					</li>
+					<!-- pastelRed2 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(1.000, 0.671, 0.671, 1.000)</only>
+					</li>
+					<!-- pastelRed3 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(1.000, 0.745, 0.737, 1.000)</only>
+					</li>
+					<!-- pastelRed4 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(1.000, 0.796, 0.757, 1.000)</only>
+					</li>
+					<!-- pastelYellow2 -->
+					<li>
+					  <weight>1</weight>
+					  <only>RGBA(1.000, 0.961, 0.729, 1.000)</only>
+					</li>
+				</options>
+			</alienhaircolorgen>
+<!--=============================================================================================================================-->
+			<alienskincolorgen Class="ColorGenerator_Options">
+				<options>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.949, 0.929, 0.878, 1.000)</only>
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.974, 0.933, 0.857, 1.000)</only>
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(1.000, 0.937, 0.835, 1.000)</only>
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(1.000, 0.937, 0.790, 1.000)</only>
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(1.000, 0.937, 0.741, 1.000)</only>
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.949, 0.784, 0.553, 1.000)</only>
+					</li>
+					<li>
+						<weight>5</weight>
+						<only>RGBA(0.894, 0.620, 0.353, 1.000)</only>
+					</li>
+					<!--
+					<li>
+						<weight>5</weight>
+						<only>RGBA(0.708, 0.492, 0.273, 1.000)</only>
+					</li>
+					-->
+				</options>
+			</alienskincolorgen>
+		</alienPartGenerator>
+        </generalSettings>
+<!--=============================================================================================================================-->
+		<graphicPaths>
+			<li>
+				<head>Things/Kurin/Head/</head>
+				<body>Things/Kurin/Body/</body>
+			</li>
+		</graphicPaths>
+<!--=============================================================================================================================-->
+        <hairSettings>
+            <hasHair>true</hasHair>
+            <hairTags>
+                <li>Kurin</li>
+            </hairTags>
+        </hairSettings>
+<!--=============================================================================================================================-->
+		<raceRestriction>
+			<apparelList>
+				<!-- Modern -->
+				<!-- Middle -->
+				<li>DRNTF_Shirt</li>
+				<li>DRNTF_TShirt</li>
+				<li>DRNTF_Pajamas</li>
+				<li>DRNTF_OnePieceDress</li>
+				<li>DRNTF_WorkJumpsuit</li>
+				<li>DRNTF_CasualWear</li>
+				<li>DRNTF_NunDress</li>
+				<li>DRNTF_OpenBackKnit</li>
+				<li>DRNTF_OpenFrontKnit</li>
+				<li>DRNTF_OpenShoulderKnit</li>
+				<li>DRNTF_GothicDress</li>
+				<!-- Shell -->
+				<li>DRNTF_Cardigan</li>
+				<li>DRNTF_Duster</li>
+				<li>DRNTF_WinterPadding</li>
+				<li>DRNTF_Hoodie</li>
+				
+				
+				<!-- Overhead -->
+				<li>DRNTF_Scarf</li>
+				<li>DRNTF_Glasses</li>
+				<li>DRNTF_SummerHat</li>
+				<li>DRNTF_WinterHat</li>
+				<li>DRNTF_GothicHairPin</li>
+				
+				<!-- Traditional -->
+				<li>DRNTF_FancyDress</li>
+				<li>DRNTF_SimpleDress</li>
+				<li>DRNTF_LuxuryDress</li>
+				<li>DRNTF_CuteDress</li>
+				<li>DRNTF_WhiteDress</li>
+				<li>DRNTF_BlackDress</li>
+				<li>DRNTF_TraditionalCoat</li>
+				<li>DRNTF_CasualHairPin</li>
+				
+				<li>DRNTF_TraditionalHairPin</li>
+				<li>DRNTF_CuteHairPin</li>
+				<!-- Underwear -->
+				<li>DRNTF_UnderwearPlain</li>
+				<li>DRNTF_UnderwearBlack</li>
+				<li>DRNTF_UnderwearRed</li>
+				<li>DRNTF_UnderwearWhite</li>
+				<li>DRNTF_UnderwearSlim</li>
+				<li>DRNTF_UnderwearStriped</li>
+				<li>DRNTF_HotPants</li>
+				<!-- Stocking -->
+				<li>DRNTF_StockingsWhite</li>
+				<li>DRNTF_StockingsPantyhose</li>
+				<li>DRNTF_StockingsBrown</li>					
+				<li>DRNTF_StockingsStriped</li>
+				<li>DRNTF_StockingsGarterbelt</li>
+				<!-- Armor -->
+				<!-- Middle -->
+				<li>DRNTF_MilitaryUniform</li>
+				<li>DRNTF_MilitaryUniformNCO</li>
+				<li>Kurin_BikiniArmor</li>
+				<li>Kurin_ArmoredGothicDress</li>
+				<!-- Shell -->
+				<li>DRNTF_FlakVest</li>
+				<!-- Overhead -->
+				<li>DRNTF_PlateHeadgear</li>
+				<li>DRNTF_MilitaryHelmetB</li>
+				<li>DRNTF_Goggles</li>
+				<li>DRNTF_GothicHairPin</li>
+				
+			</apparelList>
+			<buildingList>
+				<li>DRNTF_NooseTrap</li>
+				<li>DRNTF_ElectricTailoringBench</li>
+			</buildingList>
+		</raceRestriction>
+	</alienRace>
+<!--=============================================================================================================================-->
+	<statBases>
+		  <MarketValue>4000</MarketValue>
+		  <Flammability>1</Flammability>
+		  <MoveSpeed>6.0</MoveSpeed>
+		  <MentalBreakThreshold>0.4</MentalBreakThreshold>
+		  <ComfyTemperatureMax>32</ComfyTemperatureMax>
+		  <ComfyTemperatureMin>10</ComfyTemperatureMin>
+		  <ImmunityGainSpeed>1.0</ImmunityGainSpeed>
+		  <CarryingCapacity>39</CarryingCapacity>
+		  <MeatAmount>50</MeatAmount>
+		  <LeatherAmount>50</LeatherAmount>
+		  <HungerRateMultiplier>0.9</HungerRateMultiplier>
+		  <Mass>45</Mass>
+		  <PainShockThreshold>0.25</PainShockThreshold>
+		  <NegotiationAbility>1.5</NegotiationAbility>
+		  <SellPriceFactor>1.5</SellPriceFactor>
+		  <SocialImpact>2.0</SocialImpact>
+		  <TameAnimalChance>1.0</TameAnimalChance>
+		  <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency>
+		  <ButcheryMechanoidSpeed>1.0</ButcheryMechanoidSpeed>
+		  <ButcheryFleshEfficiency>1.0</ButcheryFleshEfficiency>
+		  <ButcheryFleshSpeed>1.0</ButcheryFleshSpeed>
+		  <FoodPoisonChance>1.0</FoodPoisonChance>
+		  <CookSpeed>1.0</CookSpeed>
+		  <RestRateMultiplier>1.0</RestRateMultiplier>
+		  <PlantWorkSpeed>1.0</PlantWorkSpeed>
+	</statBases>
+<!--=============================================================================================================================-->
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>16</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>16</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.4</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+<!--=============================================================================================================================-->
+	<race>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+		<lifeExpectancy>120</lifeExpectancy>
+		<leatherDef>Leather_Human</leatherDef>
+		<nameCategory>HumanStandard</nameCategory>
+		<body>DRNTF_Body</body>
+		<baseBodySize>0.90</baseBodySize>
+		<baseHealthScale>1</baseHealthScale>
+		<foodType>OmnivoreHuman</foodType>
+		<gestationPeriodDays>30</gestationPeriodDays>
+		<meatMarketValue>0.8</meatMarketValue>
+		<manhunterOnDamageChance>0.60</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
+		<litterSizeCurve>
+		<points>
+			<li>(0.5, 0)</li>
+			<li>(1, .40)</li>
+			<li>(2, .30)</li>
+			<li>(3, .20)</li>
+			<li>(4, .10)</li>
+			<li>(5, 0)</li>
+		</points>
+		</litterSizeCurve>
+		<lifeStageAges>
+			<li>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>HumanlikeToddler</def>
+				<minAge>1.2</minAge>
+			</li>
+			<li>
+				<def>HumanlikeChild</def>
+				<minAge>4</minAge>
+			</li>
+			<li>
+				<def>HumanlikeTeenager</def>
+				<minAge>13</minAge>
+			</li>
+			<li>
+				<def>HumanlikeAdult</def>
+				<minAge>18</minAge>
+			</li>
+		</lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+		<points>
+		<li>(14,0)</li>
+		<li>(20,100)</li>
+		<li>(30,0)</li>
+		<li>(40,0)</li>
+		<li>(60,0)</li>
+		<li>(80,0)</li>
+		<li>(120,0)</li>
+		</points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+        <li>Human</li>
+      </hediffGiverSets>
+    </race>
+<!--=============================================================================================================================-->
+	<tradeTags>
+		<li>AnimalExotic</li>
+	</tradeTags>
+</AlienRace.ThingDef_AlienRace>
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.RaceSettings>
+		<defName>DRNTF_Race_Setting</defName>
+		<pawnKindSettings>
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>DRNTFSlave</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>				
+			</alienslavekinds>
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>DRNTFRefugee</li>
+					</kindDefs>
+					<chance>1.0</chance>
+				</li>
+			</alienrefugeekinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+</Defs>

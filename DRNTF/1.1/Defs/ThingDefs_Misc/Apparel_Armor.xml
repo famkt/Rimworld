@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--================================================== Base ==================================================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ArmorMakeableBase" ParentName="DRNTF_ArmorSmithableBase" Abstract="True">
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	</graphicData>
+</ThingDef>
+
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ArmorBodyMakeableBase" ParentName="DRNTF_ApparelMakeableBase" Abstract="True">
+</ThingDef>
+	
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ArmorBodyMakeableBase_NoColor" ParentName="DRNTF_ArmorBodyMakeableBase" Abstract="True">
+	<followStuffColor>false</followStuffColor>
+</ThingDef>
+
+<!-- Overhead -->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ArmorMachineableOverheadMakeableBase" ParentName="DRNTF_ArmorMachineableBase" Abstract="True">
+	<thingCategories>
+			<li>DRNTF_Apparel_Armor_Overhead</li>
+	</thingCategories>
+</ThingDef>
+
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ArmorMachineableOverheadMakeableBase_NoColor" ParentName="DRNTF_ArmorMachineableOverheadMakeableBase" Abstract="True">
+	<followStuffColor>false</followStuffColor>
+</ThingDef>
+
+<!--================================================== Plate ==================================================-->
+<!-- Plate Armor -->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ArmorSmithableBase">
+	<defName>DRNTF_BikiniArmor</defName>
+	<techLevel>Medieval</techLevel>
+	<label>Kurin plate armor</label>
+	<followStuffColor>false</followStuffColor>
+	<description>A heavy plate armor that does not cover enough. Yet provides a distraction for the enemy. Fit for an esquire.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Armor/BikiniArmor/Texture</texPath>
+	</graphicData>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>170</costStuffCount>
+    <statBases>
+      <WorkToMake>38000</WorkToMake>
+      <MaxHitPoints>290</MaxHitPoints>
+      <Mass>15</Mass>
+      <StuffEffectMultiplierArmor>0.9125</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>15</EquipDelay>
+    </statBases>
+	<apparel>
+		<layers>
+			<li>Middle</li>
+		</layers>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+			<li>Arms</li>
+			<li>Neck</li>
+			<li>Feet</li>
+			<li>Hands</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/Armor/BikiniArmor/Texture</wornGraphicPath>
+		<tags>
+			<li>Royal</li>
+			<li>RoyalTier5</li>
+		</tags>
+	</apparel>
+	<equippedStatOffsets>
+		<MoveSpeed>-1.2</MoveSpeed>
+		<!--
+		<MeleeHitChance>1.5</MeleeHitChance>
+		<MeleeDodgeChance>6.0</MeleeDodgeChance>
+		-->
+	</equippedStatOffsets>
+	<thingCategories>
+		<li>DRNTF_Apparel_Armor_Middle</li>
+	</thingCategories>
+</ThingDef>
+
+<!-- Plate Headgear -->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ArmorSmithableBase">
+	<defName>DRNTF_PlateHeadgear</defName>
+	<techLevel>Medieval</techLevel>
+	<label>Kurin plate headgear</label>
+	<description>A headpiece which protects a Kurin's head. Stronger than it looks.</description>
+	<apparel>
+		<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<wornGraphicPath>Things/Kurin/Apparel/ArmorOverhead/BikiniArmorHeadgear/Texture</wornGraphicPath>
+	</apparel>
+	<recipeMaker>
+	  <researchPrerequisite>PlateArmor</researchPrerequisite>
+	</recipeMaker>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/ArmorOverhead/BikiniArmorHeadgear/Texture</texPath>
+	</graphicData>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>40</costStuffCount>
+    <statBases>
+      <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.625</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+</ThingDef>
+
+
+<!--================================================== Modern ==================================================-->
+<!-- Military Uniform -->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ArmorBodyMakeableBase_NoColor">
+    <defName>DRNTF_MilitaryUniform</defName>
+	<techLevel>Industrial</techLevel>
+    <label>Kurin military uniform</label>
+	<description>A padded uniform with standard issue steel plates for extra protection.</description>    
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/Armor/MilitaryUniform/Texture</texPath>
+    </graphicData>
+    <statBases>
+		<WorkToMake>8000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2</Mass>
+		<Flammability>0.6</Flammability>
+		<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.20</ArmorRating_Heat>
+		<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+        <StuffEffectMultiplierInsulation_Heat>1.0</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+	<costList>
+		<Steel>50</Steel>
+	</costList>
+	<costStuffCount>70</costStuffCount>
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+    <apparel>
+      <bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+			<li>Arms</li>
+			<li>Shoulders</li>
+			<li>Neck</li>
+			<li>Feet</li>
+			<li>Hands</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Kurin/Apparel/Armor/MilitaryUniform/Texture</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Armor_Middle</li>
+	</thingCategories>
+</ThingDef>	
+
+
+<!--================================================== Flak ==================================================-->
+<!-- Flak Armor -->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ArmorMakeableBase">
+    <defName>DRNTF_FlakVest</defName>
+	<techLevel>Industrial</techLevel>
+    <label>Kurin Flak Vest</label>
+	<description>Additional armor which goes on top of the uniform.</description>    
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/Armor/FlakVest/Texture</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>4</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.27</ArmorRating_Heat>
+      <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Cloth>30</Cloth>
+      <Steel>60</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Kurin/Apparel/Armor/FlakVest/Texture</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Armor_Shell</li>
+	</thingCategories>
+</ThingDef>	
+
+<!-- Flak Helmet -->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ArmorMachineableOverheadMakeableBase_NoColor">
+	<defName>DRNTF_MilitaryHelmetB</defName>
+	<techLevel>Industrial</techLevel>
+	<label>Kurin Military Helmet</label>
+	<description>A military helmet designed to fit over a Kurin's ears.</description>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/ArmorOverhead/MilitaryHelmetB/Texture</texPath>
+	</graphicData>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
+    </costList>
+	<apparel>
+		<bodyPartGroups>
+			<li>UpperHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<wornGraphicPath>Things/Kurin/Apparel/ArmorOverhead/MilitaryHelmetB/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<!-- Military Goggles -->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ArmorMachineableOverheadMakeableBase_NoColor">
+	<defName>DRNTF_Goggles</defName>
+	<techLevel>Industrial</techLevel>
+	<label>Kurin goggles</label>
+	<description>Goggles which fit snugly on a Kurin's face. Protects their delicate eyes while they work.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/ArmorOverhead/Goggles/Texture</texPath>
+	</graphicData>
+	<recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+	</recipeMaker>
+    <costList>
+      <Cloth>25</Cloth>
+    </costList>
+	<costStuffCount>25</costStuffCount>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>6000</WorkToMake>
+		<Mass>0.5</Mass>
+		<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+        <StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>0.5</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<AimingDelayFactor>-0.10</AimingDelayFactor>
+		<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+	</equippedStatOffsets>
+	<apparel>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<bodyPartGroups>
+			<li>Eyes</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/ArmorOverhead/Goggles/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<!--================================================== Power ==================================================-->
+<!-- armored gothic dress -->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ArmorSmithableBase">
+	<techLevel>Spacer</techLevel>
+	<defName>DRNTF_ArmoredGothicDress</defName>
+	<label>Royal Kurin armored gothic dress</label>
+	<description>A regal attire.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Armor/ArmoredGothicDress/Texture</texPath>
+	</graphicData>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+	  <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<costList>
+		<DevilstrandCloth>105</DevilstrandCloth>
+		<Plasteel>40</Plasteel>
+	</costList>
+    <costStuffCount>170</costStuffCount>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>12</Mass>
+	  <Flammability>0.4</Flammability>
+      <StuffEffectMultiplierArmor>1.31</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>14</EquipDelay>
+    </statBases>
+	<apparel>
+		<layers>
+			<li>Middle</li>
+		</layers>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+			<li>Arms</li>
+			<li>Neck</li>
+			<li>Hands</li>
+			<li>Feet</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/OnSkin/Bikini_Armor/Texture</wornGraphicPath>
+		<tags>
+			<li>DRNTFRefugee_Apparel_Royal</li>
+			<li>Psychic</li>
+		</tags>
+	</apparel>
+	<!--
+	<equippedStatOffsets>
+		<MeleeDodgeChance>12.0</MeleeDodgeChance>
+		<MeleeHitChance>2.0</MeleeHitChance>
+	</equippedStatOffsets>
+	-->
+	<thingCategories>
+		<li>DRNTF_Apparel_Armor_Middle</li>
+	</thingCategories>
+</ThingDef>	
+
+
+
+
+</Defs>

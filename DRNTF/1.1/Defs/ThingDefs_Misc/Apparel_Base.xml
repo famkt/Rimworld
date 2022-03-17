@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<techLevel>Neolithic</techLevel>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-3</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<apparel>
+			<tags>
+				<li>DRNTF_Apparel</li>
+			</tags>
+		</apparel>
+
+	</ThingDef>
+
+  <ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ApparelMakeableBase" ParentName="DRNTF_ApparelBase" Abstract="True">
+    <costStuffCount>40</costStuffCount>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+		<li>DRNTF_ElectricTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+  </ThingDef>
+	
+  <ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ArmorSmithableBase" ParentName="DRNTF_ApparelBase" Abstract="True">
+    <smeltable>true</smeltable>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+		<li>DRNTF_ElectricTailoringBench</li>
+      </recipeUsers>
+	  <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  
+	<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ArmorMachineableBase" ParentName="DRNTF_ApparelBase" Abstract="True">
+	<recipeMaker>
+	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	  <workSkill>Crafting</workSkill>
+	  <effectWorking>Smith</effectWorking>
+	  <soundWorking>Recipe_Machining</soundWorking>
+	  <recipeUsers>
+		<li>DRNTF_ElectricTailoringBench</li>
+	  </recipeUsers>
+	  <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+	  <defaultIngredientFilter>
+		<categories>
+		  <li>Root</li>
+		</categories>
+		<disallowedThingDefs>
+		  <li>Gold</li>
+		  <li>Silver</li>
+		  <li>Plasteel</li>
+		  <li>Jade</li>
+		  <li>Uranium</li>
+		</disallowedThingDefs>
+	  </defaultIngredientFilter>
+	</recipeMaker>
+	</ThingDef>
+	
+</Defs>
