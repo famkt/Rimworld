@@ -1,2 +1,4 @@
 # Rimworld
-C# learning with Rimworld
+Art by GloomyLynx
+
+C# learning by modding Rimworld
