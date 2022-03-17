@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseKurinPawnKind">
+    <race>DRNTF_Race</race>
+	<combatPower>40</combatPower>
+	<backstoryCategories>
+		<li>DRNTFStory</li>
+	</backstoryCategories>
+    <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+ 
+   <PawnKindDef ParentName="BaseKurinPawnKind">
+    <defName>DRNTFRefugee</defName>
+	<label>kurin refugee</label>
+    <labelPlural>kurin refugees</labelPlural>
+    <labelFemale>kurin refugee</labelFemale>
+    <labelFemalePlural>kurin refugees</labelFemalePlural>
+	<gearHealthRange>0.4~1.4</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <chemicalAddictionChance>0.03</chemicalAddictionChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>0~1000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+	<apparelRequired>
+      <li>DRNTF_UnderwearPlain</li>
+    </apparelRequired>
+	<apparelTags>
+		<li>ApparelDRNTFRefugee</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>500</min>
+		<max>750</max>
+	</apparelMoney>	
+	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+   <PawnKindDef>
+    <defName>DRNTFSlave</defName>
+	<race>DRNTF_Race</race>
+	<combatPower>40</combatPower>
+	<backstoryCategories>
+		<li>DRNTFStory</li>
+	</backstoryCategories>
+	<label>kurin slave</label>
+    <labelPlural>kurin slaves</labelPlural>
+    <labelFemale>kurin slave</labelFemale>
+    <labelFemalePlural>kurin slaves</labelFemalePlural>
+	<gearHealthRange>0.4~1.4</gearHealthRange>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <itemQuality>Poor</itemQuality>
+    <chemicalAddictionChance>0.03</chemicalAddictionChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <techHediffsChance>0.03</techHediffsChance>
+	<apparelRequired>
+      <li>DRNTF_UnderwearPlain</li>
+    </apparelRequired>
+	<apparelTags>
+		<li>ApparelDRNTFRefugee</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>250</min>
+		<max>550</max>
+	</apparelMoney>	
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseKurinPawnKind">
+    <defName>DRNTFWild</defName>
+	<label>Wild kurin</label>
+    <labelPlural>kurin slaves</labelPlural>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0.03</chemicalAddictionChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <techHediffsChance>0.03</techHediffsChance>
+  </PawnKindDef>
+  
+<PawnKindDef ParentName="BaseKurinPawnKind">
+	<defName>DRNTFPlayerAbandoned</defName>
+	<label>kurin refugee</label>
+    <labelPlural>kurin refugees</labelPlural>
+    <labelFemale>kurin refugee</labelFemale>
+    <labelFemalePlural>kurin refugees</labelFemalePlural>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<forceNormalGearQuality>true</forceNormalGearQuality>
+	<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+	<baseRecruitDifficulty>0.10</baseRecruitDifficulty>
+	<apparelMoney>
+		<min>0</min>
+		<max>0</max>
+	</apparelMoney>	
+</PawnKindDef>
+
+<PawnKindDef ParentName="BaseKurinPawnKind">
+	<defName>DRNTFPlayerRunaway</defName>
+	<label>kurin refugee</label>
+    <labelPlural>kurin refugees</labelPlural>
+    <labelFemale>kurin refugee</labelFemale>
+    <labelFemalePlural>kurin refugees</labelFemalePlural>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<forceNormalGearQuality>true</forceNormalGearQuality>
+	<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+	<baseRecruitDifficulty>0.10</baseRecruitDifficulty>
+	<apparelRequired>
+      <li>DRNTF_UnderwearPlain</li>
+    </apparelRequired>
+	<apparelTags>
+		<li>ApparelDRNTFRefugee</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>0</min>
+		<max>0</max>
+	</apparelMoney>	
+</PawnKindDef>
+</Defs>

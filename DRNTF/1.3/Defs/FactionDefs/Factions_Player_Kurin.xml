@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef ParentName="PlayerFactionBase">
+	<defName>DRNTF_FactionAbandoned</defName>
+	<label>Kurin Refuge</label>
+	<description>A Kurin Refuge.</description>
+	<isPlayer>true</isPlayer>
+	<basicMemberKind>DRNTFPlayerAbandoned</basicMemberKind>
+    <pawnSingular>refugee</pawnSingular>
+    <pawnsPlural>refugees</pawnsPlural>
+    <techLevel>Neolithic</techLevel>
+	<allowedCultures><li>Aolarian</li></allowedCultures>
+	<colorSpectrum>
+		<li>(1, 0.7, 0.7)</li>
+	</colorSpectrum>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>DRNTFStory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <settlementTexturePath>world/Kurinbase</settlementTexturePath>
+    <factionIconPath>world/Kurinbase</factionIconPath>
+	<geneticVariance>1</geneticVariance>
+	<startingResearchTags>
+		<li>TribalStart</li>
+	</startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+	<!--<hairTags>
+		<li>Kurin</li>
+	</hairTags>-->
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+</FactionDef>
+
+<FactionDef ParentName="PlayerFactionBase">
+	<defName>DRNTF_FactionRunaway</defName>
+	<label>Kurin Refuge</label>
+	<description>A Kurin Refuge.</description>
+	<isPlayer>true</isPlayer>
+	<basicMemberKind>DRNTFPlayerRunaway</basicMemberKind>
+    <pawnSingular>refugee</pawnSingular>
+    <pawnsPlural>refugees</pawnsPlural>
+    <techLevel>Neolithic</techLevel>
+	<allowedCultures><li>Aolarian</li></allowedCultures>
+	<colorSpectrum>
+		<li>(1, 0.7, 0.7)</li>
+	</colorSpectrum>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>DRNTFStory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <settlementTexturePath>world/Kurinbase</settlementTexturePath>
+    <factionIconPath>world/Kurinbase</factionIconPath>
+	<geneticVariance>1</geneticVariance>
+	<startingResearchTags>
+		<li>TribalStart</li>
+	</startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+	<!--<hairTags>
+		<li>Kurin</li>
+	</hairTags>-->
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+</FactionDef>
+</Defs>

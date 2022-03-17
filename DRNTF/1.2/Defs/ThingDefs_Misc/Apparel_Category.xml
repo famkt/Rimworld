@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel</defName>
+		<label>kurin apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<!--Modern-->
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Modern</defName>
+		<label>Modern Kurin apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Modern_Regular</defName>
+		<label>Regular</label>
+		<parent>DRNTF_Apparel_Modern</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Modern_Noble</defName>
+		<label>Noble</label>
+		<parent>DRNTF_Apparel_Modern</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Modern_Royal</defName>
+		<label>Royal</label>
+		<parent>DRNTF_Apparel_Modern</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Modern_Overhead</defName>
+		<label>Overhead</label>
+		<parent>DRNTF_Apparel_Modern</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Modern_Shell</defName>
+		<label>Shell</label>
+		<parent>DRNTF_Apparel_Modern</parent>
+	</ThingCategoryDef>	
+	
+	<!--Traditional-->
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Traditional</defName>
+		<label>Traditional Kurin apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Traditional_Regular</defName>
+		<label>Regular</label>
+		<parent>DRNTF_Apparel_Traditional</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Traditional_Noble</defName>
+		<label>Noble</label>
+		<parent>DRNTF_Apparel_Traditional</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Traditional_Royal</defName>
+		<label>Royal</label>
+		<parent>DRNTF_Apparel_Traditional</parent>
+	</ThingCategoryDef>
+	
+	<!--Armor-->
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Armor</defName>
+		<label>Armor Kurin apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Armor_Middle</defName>
+		<label>Middle</label>
+		<parent>DRNTF_Apparel_Armor</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Armor_Shell</defName>
+		<label>Shell</label>
+		<parent>DRNTF_Apparel_Armor</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Armor_Overhead</defName>
+		<label>Overhead</label>
+		<parent>DRNTF_Apparel_Armor</parent>
+	</ThingCategoryDef>
+
+	<!--Spacer-->
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Spacer</defName>
+		<label>Spacer Kurin apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+	
+	<!--Underwear-->
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Underwear</defName>
+		<label>Kurin underwear apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Underwear_Regular</defName>
+		<label>Regular</label>
+		<parent>DRNTF_Apparel_Underwear</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Underwear_Noble</defName>
+		<label>Noble</label>
+		<parent>DRNTF_Apparel_Underwear</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Underwear_Royal</defName>
+		<label>Royal</label>
+		<parent>DRNTF_Apparel_Underwear</parent>
+	</ThingCategoryDef>
+	
+	<!--Stocking-->
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Stocking</defName>
+		<label>kurin stocking apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Stocking_Regular</defName>
+		<label>Regular</label>
+		<parent>DRNTF_Apparel_Stocking</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Stocking_Noble</defName>
+		<label>Noble</label>
+		<parent>DRNTF_Apparel_Stocking</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Stocking_Royal</defName>
+		<label>Royal</label>
+		<parent>DRNTF_Apparel_Stocking</parent>
+	</ThingCategoryDef>
+	
+	<!--Unsorted-->
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_OnSkin</defName>
+		<label>kurin onskin apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Middle</defName>
+		<label>kurin middle apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Shell</defName>
+		<label>kurin shell apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Belt</defName>
+		<label>kurin belt apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>DRNTF_Apparel_Overhead</defName>
+		<label>kurin overhead apparel</label>
+		<parent>DRNTF_Apparel</parent>
+	</ThingCategoryDef>
+</Defs>

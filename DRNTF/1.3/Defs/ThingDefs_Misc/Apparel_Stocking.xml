@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--==================== Regular Stocking ====================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_StockingMakeableBase" ParentName="DRNTF_ApparelMakeableBase" Abstract="True">
+	<costStuffCount>25</costStuffCount>
+	<graphicData>
+	      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<statBases>
+		<Mass>0.1</Mass>
+		<EquipDelay>1.0</EquipDelay>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>2000</WorkToMake>
+		<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Feet</li>
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+	</apparel>
+	<equippedStatOffsets>
+		<MoveSpeed>0.1</MoveSpeed>
+	</equippedStatOffsets>
+</ThingDef>
+
+
+
+<!--==================== Regular Stocking ====================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_StockingRegularMakeableBase" ParentName="DRNTF_StockingMakeableBase" Abstract="True">
+	<statBases>
+		<Beauty>1</Beauty>
+	</statBases>
+	<apparel>
+		<tags>
+			<li>ApparelDRNTFRefugee</li>
+		</tags>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Stocking_Regular</li>
+	</thingCategories>
+	<equippedStatOffsets>
+		<MoveSpeed>0.125</MoveSpeed>
+	</equippedStatOffsets>
+</ThingDef>
+
+<!--White Stockings-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_StockingRegularMakeableBase">
+	<defName>DRNTF_StockingsWhite</defName>
+	<label>Kurin white stockings</label>
+	<description>A pair of cute white stockings. Enhances the cuteness of a Kurin.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Stocking/White_Stockings/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Kurin/Apparel/Stocking/White_Stockings/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+
+<!--==================== Noble Stocking ====================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_StockingNobleMakeableBase" ParentName="DRNTF_StockingMakeableBase" Abstract="True">
+	<recipeMaker>
+		<researchPrerequisite>NobleApparel</researchPrerequisite>
+	</recipeMaker>
+	<statBases>
+		<Beauty>2</Beauty>
+	</statBases>
+	<apparel>
+		<tags>
+			<li>DRNTFRefugee_Apparel_Noble</li>
+			<li>Royal</li>
+			<li>RoyalTier2</li>
+		</tags>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Stocking_Noble</li>
+	</thingCategories>
+	<equippedStatOffsets>
+		<MoveSpeed>0.125</MoveSpeed>
+	</equippedStatOffsets>
+</ThingDef>
+
+<!--No color Noble-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_StockingNobleMakeableBase_NoColor" ParentName="DRNTF_StockingNobleMakeableBase" Abstract="True">
+	<followStuffColor>false</followStuffColor>
+</ThingDef>
+
+<!--Pantyhose-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_StockingNobleMakeableBase_NoColor">
+	<defName>DRNTF_StockingsPantyhose</defName>
+	<label>Noble Kurin pantyhose</label>
+	<description>A pair of cute pantyhose. Enhances the cuteness of a Kurin. Fit for an Esquire.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Stocking/Pantyhose/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Kurin/Apparel/Stocking/Pantyhose/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<!--Brown Stockings-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_StockingNobleMakeableBase_NoColor">
+	<defName>DRNTF_StockingsBrown</defName>
+	<label>Noble Kurin brown stockings</label>
+	<description>A pair of cute brown stockings. Enhances the cuteness of a Kurin. Fit for an Esquire.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Stocking/Brown_Stockings/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Kurin/Apparel/Stocking/Brown_Stockings/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+
+<!--==================== Royal Stocking ====================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_StockingRoyalMakeableBase" ParentName="DRNTF_StockingMakeableBase" Abstract="True">
+	<statBases>
+		<Beauty>3</Beauty>
+	</statBases>
+	<recipeMaker>
+		<researchPrerequisite>RoyalApparel</researchPrerequisite>
+	</recipeMaker>
+	<apparel>
+		<tags>
+			<li>DRNTFRefugee_Apparel_Royal</li>
+			<li>Psychic</li>
+		</tags>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Stocking_Royal</li>
+	</thingCategories>
+	<equippedStatOffsets>
+		<MoveSpeed>0.15</MoveSpeed>
+	</equippedStatOffsets>
+</ThingDef>
+
+<!--No color royal-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_StockingRoyalMakeableBase_NoColor" ParentName="DRNTF_StockingRoyalMakeableBase" Abstract="True">
+	<followStuffColor>false</followStuffColor>
+</ThingDef>
+
+<!--Striped Stockings-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_StockingRoyalMakeableBase">
+	<defName>DRNTF_StockingsStriped</defName>
+	<label>Royal Kurin striped stockings</label>
+	<description>A pair of cute striped stockings. Enhances the cuteness of a Kurin. Fit for a Countess.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Stocking/Striped_Stockings/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Kurin/Apparel/Stocking/Striped_Stockings/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<!--Garterbelt-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_StockingRoyalMakeableBase_NoColor">
+	<defName>DRNTF_StockingsGarterbelt</defName>
+	<label>Royal Kurin garterbelt stockings</label>
+	<description>A pair of cute garterbelt stockings. Enhances the cuteness of a Kurin. Fit for a Countess.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Stocking/Garterbelt_Stockings/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Kurin/Apparel/Stocking/Garterbelt_Stockings/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+</Defs>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_UnderwearMakeableBase" ParentName="DRNTF_ApparelMakeableBase" Abstract="True">
+    <costStuffCount>20</costStuffCount>
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.1</Mass>
+      <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+	    <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+    </apparel>
+	<equippedStatOffsets>
+		<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+		<SocialImpact>0.1</SocialImpact>
+	</equippedStatOffsets>
+  </ThingDef>
+<!--==================== Regular Underwear ====================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_UnderwearRegularMakeableBase" ParentName="DRNTF_UnderwearMakeableBase" Abstract="True">
+	<statBases>
+		<Beauty>1</Beauty>
+	</statBases>
+	<apparel>
+		<tags>
+			<li>ApparelDRNTFRefugee</li>
+		</tags>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Underwear_Regular</li>
+	</thingCategories>
+</ThingDef>
+
+	<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_UnderwearRegularMakeableBase_NoColor" ParentName="DRNTF_UnderwearRegularMakeableBase" Abstract="True">
+		<followStuffColor>false</followStuffColor>
+	</ThingDef>
+	
+  <!--Underwear_Plain-->
+  <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_UnderwearRegularMakeableBase">
+    <defName>DRNTF_UnderwearPlain</defName>
+    <description>Plain underwear for Kurins.</description>
+    <label>plain Kurin underwear</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/Underwear/Underwear_Plain/Texture</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Kurin/Apparel/Underwear/Underwear_Plain/Texture</wornGraphicPath>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <!--Underwear_Black-->
+  <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_UnderwearRegularMakeableBase_NoColor">
+    <defName>DRNTF_UnderwearBlack</defName>
+    <description>Black underwear for Kurins.</description>
+    <label>black Kurin underwear</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/Underwear/Underwear_Black/Texture</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Kurin/Apparel/Underwear/Underwear_Black/Texture</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  
+  
+<!--==================== Nobel Underwear ====================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_UnderwearNobleMakeableBase" ParentName="DRNTF_UnderwearMakeableBase" Abstract="True">
+	<statBases>
+		<Beauty>2</Beauty>
+	</statBases>
+	<recipeMaker>
+		<researchPrerequisite>NobleApparel</researchPrerequisite>
+	</recipeMaker>
+	<apparel>
+		<tags>
+			<li>DRNTFRefugee_Apparel_Nobel</li>
+			<li>Royal</li>
+			<li>RoyalTier2</li>
+		</tags>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Underwear_Noble</li>
+	</thingCategories>
+</ThingDef>
+
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_UnderwearNobleMakeableBase_NoColor" ParentName="DRNTF_UnderwearNobleMakeableBase" Abstract="True">
+	<followStuffColor>false</followStuffColor>
+</ThingDef>
+	
+<!--Underwear_Red-->
+  <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_UnderwearNobleMakeableBase_NoColor">
+    <defName>DRNTF_UnderwearRed</defName>
+    <description>Red underwear for Kurins. Fit for an Esquire.</description>
+    <label>Noble red Kurin underwear</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/Underwear/Underwear_Red/Texture</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Kurin/Apparel/Underwear/Underwear_Red/Texture</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  
+   <!--Underwear_White-->
+  <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_UnderwearNobleMakeableBase">
+    <defName>DRNTF_UnderwearWhite</defName>
+    <description>White underwear for Kurins. Fit for an Esquire.</description>
+    <label>Noble white Kurin underwear</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/Underwear/Underwear_White/Texture</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Kurin/Apparel/Underwear/Underwear_White/Texture</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  
+<!--==================== Royal Underwear ====================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_UnderwearRoyalMakeableBase" ParentName="DRNTF_UnderwearMakeableBase" Abstract="True">
+	<statBases>
+		<Beauty>3</Beauty>
+	</statBases>
+	<recipeMaker>
+		<researchPrerequisite>RoyalApparel</researchPrerequisite>
+	</recipeMaker>
+	<apparel>
+		<tags>
+			<li>DRNTFRefugee_Apparel_Royal</li>
+			<li>Psychic</li>
+		</tags>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Underwear_Royal</li>
+	</thingCategories>
+</ThingDef>
+
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_UnderwearRoyalMakeableBase_NoColor" ParentName="DRNTF_UnderwearRoyalMakeableBase" Abstract="True">
+	<followStuffColor>false</followStuffColor>
+</ThingDef>
+
+  <!--Underwear_Slim-->
+  <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_UnderwearRoyalMakeableBase_NoColor">
+    <defName>DRNTF_UnderwearSlim</defName>
+    <description>Slim underwear for Kurins. Fit for a Countess.</description>
+    <label>Royal slim Kurin underwear</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/Underwear/Underwear_Slim/Texture</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Kurin/Apparel/Underwear/Underwear_Slim/Texture</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  
+  <!--Underwear_Striped-->
+  <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_UnderwearRoyalMakeableBase">
+    <defName>DRNTF_UnderwearStriped</defName>
+    <description>Striped underwear for Kurins. Fit for a Countess.</description>
+    <label>Royal striped Kurin underwear</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/Underwear/Underwear_Striped/Texture</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Kurin/Apparel/Underwear/Underwear_Striped/Texture</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+ 
+ <!--================================================== Modern ==================================================-->
+ <!--HotPants-->
+   <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_UnderwearMakeableBase">
+	<recipeMaker>
+		<researchPrerequisite>ComplexClothing</researchPrerequisite>
+	</recipeMaker>
+    <defName>DRNTF_HotPants</defName>
+    <description>A revealing set of apparel, is it underwear or is it clothes?.</description>
+    <label>Hot Pants</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/Underwear/HotPants/Texture</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Kurin/Apparel/Underwear/HotPants/Texture</wornGraphicPath>
+    </apparel>
+	<equippedStatOffsets>
+		<SocialImpact>0.2</SocialImpact>
+	</equippedStatOffsets>
+	<thingCategories>
+		<li>DRNTF_Apparel_Underwear_Regular</li>
+	</thingCategories>
+  </ThingDef>
+</Defs>

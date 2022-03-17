@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Prosthetic Tail -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DRNTF_FakeTail</defName>
+    <label>fake kurin tail</label>
+    <labelNoun>a fake kurin tail</labelNoun>
+    <description>this is a fake kurin tail.</description>
+    <descriptionHyperlinks><ThingDef>DRNTF_FakeTail</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>DRNTF_FakeTail</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.85</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticBase">
+    <defName>DRNTF_FakeTail</defName>
+    <label>fake kurin tail</label>
+    <description>간단한 가짜 꼬리입니다. 자세히 보면 뭔가 어색합니다.</description>
+    <descriptionHyperlinks><RecipeDef>DRNTF_InstallFakeTail</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>DRNTF_InstallFakeTail</defName>
+    <label>install fake kurin tail</label>
+    <description>Install a fake kurin tail.</description>
+    <descriptionHyperlinks><ThingDef>DRNTF_FakeTail</ThingDef></descriptionHyperlinks>
+    <jobString>Installing fake kurin tail.</jobString>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<recipeUsers Inherit="False">
+      <li>DRNTF_Race</li>
+    </recipeUsers>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>DRNTF_FakeTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+	  </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<thingDefs>
+			<li>DRNTF_FakeTail</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRNTF_Tail</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRNTF_FakeTail</addsHediff>
+  </RecipeDef>
+  
+<!-- Bionic Tail -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DRNTF_BionicTail</defName>
+    <label>bionic kurin tail</label>
+    <labelNoun>a bionic kurin tail</labelNoun>
+    <description>this is a bionic kurin tail.</description>
+    <descriptionHyperlinks><ThingDef>DRNTF_BionicTail</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>DRNTF_BionicTail</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>DRNTF_BionicTail</defName>
+    <label>bionic kurin tail</label>
+    <description>간단한 가짜 꼬리입니다. 자세히 보면 뭔가 어색합니다.</description>
+    <descriptionHyperlinks><RecipeDef>DRNTF_InstallBionicTail</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+	<statBases>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>DRNTF_InstallBionicTail</defName>
+    <label>install bionic kurin tail</label>
+    <description>Install a bionic kurin tail.</description>
+    <descriptionHyperlinks><ThingDef>DRNTF_BionicTail</ThingDef></descriptionHyperlinks>
+    <jobString>Installing bionic kurin tail..</jobString>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<recipeUsers Inherit="False">
+      <li>DRNTF_Race</li>
+    </recipeUsers>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>DRNTF_BionicTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+	  </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<thingDefs>
+			<li>DRNTF_BionicTail</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRNTF_Tail</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRNTF_BionicTail</addsHediff>
+  </RecipeDef>
+
+<!-- Bionic Ear -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DRNTF_BionicEar</defName>
+    <label>bionic kurin ear</label>
+    <labelNoun>a bionic kurin ear</labelNoun>
+    <description>this is a bionic kurin ear.</description>
+    <descriptionHyperlinks><ThingDef>DRNTF_BionicEar</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>DRNTF_BionicEar</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>DRNTF_BionicEar</defName>
+    <label>bionic kurin ear</label>
+    <description>진짜 쿠린의 귀하고 구별할 수 없을 만큼 정교한 인공 귀입니다.</description>
+    <descriptionHyperlinks><RecipeDef>DRNTF_InstallBionicEar</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>DRNTF_InstallBionicEar</defName>
+    <label>install bionic kurin ear</label>
+    <description>Install a bionic kurin ear.</description>
+    <descriptionHyperlinks><ThingDef>DRNTF_BionicEar</ThingDef></descriptionHyperlinks>
+    <jobString>Installing bionic kurin ear.</jobString>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<recipeUsers Inherit="False">
+      <li>DRNTF_Race</li>
+    </recipeUsers>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>DRNTF_BionicEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+	  </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<thingDefs>
+			<li>DRNTF_BionicEar</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRNTF_Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRNTF_BionicEar</addsHediff>
+  </RecipeDef>
+
+</Defs>
+

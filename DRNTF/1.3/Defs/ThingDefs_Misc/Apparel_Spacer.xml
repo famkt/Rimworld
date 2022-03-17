@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--================================================== Plate ==================================================-->
+<!-- Plate Armor -->
+  <thingDef ParentName="ApparelMakeableBase">
+    <defName>DRNTF_CygnusTights</defName>
+    <label>cygnus jumpsuit</label>
+    <techLevel>Spacer</techLevel>
+    <description>A carbon crystalline fiber jumpsuit for military personnel. It is light and thin, but surprisingly sturdy.</description>
+    <graphicData> <texPath>Things/Kurin/Apparel/Spacer/CygnusTights/Texture</texPath>
+    <graphicClass>Graphic_Single</graphicClass> </graphicData>
+    <statBases>
+      <Mass>1.71</Mass>
+			<WorkToMake>24200</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.00</ArmorRating_Heat>
+			<Insulation_Cold>100</Insulation_Cold>
+			<Insulation_Heat>25</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>DRNTF_Apparel_Spacer</li>
+    </thingCategories>
+    <apparel>
+     <wornGraphicPath>Things/Kurin/Apparel/Spacer/CygnusTights/Texture</wornGraphicPath>
+			<layers>
+			    <li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+			    <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>	
+			</bodyPartGroups>
+			<tags>
+				<li>DRNTF_Apparel_Spacer</li>
+				<li>Psychic</li>
+				<li>Spacer</li>
+				<li>EVA</li>
+			</tags>
+    </apparel>
+    <recipeMaker>
+	  <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <recipeUsers Inherit="False">
+        <li>DRNTF_ElectricTailoringBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Cloth>55</Cloth>
+      <DevilstrandCloth>4</DevilstrandCloth>
+    </costList>
+	<equippedStatOffsets>
+		<MoveSpeed>0.2</MoveSpeed>
+		<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+	</equippedStatOffsets>
+    </thingDef>
+
+<!-- Cygnus Armor -->
+  <thingDef ParentName="DRNTF_ArmorSmithableBase">
+    <defName>DRNTF_CygnusArmor</defName>
+    <label>cygnus armor</label>
+    <techLevel>Spacer</techLevel>
+    <description>A carbon crystalline fiber jumpsuit for military personnel. It is light and thin, but surprisingly sturdy.</description>
+    <graphicData> <texPath>Things/Kurin/Apparel/Spacer/CygnusArmor/Texture</texPath>
+    <graphicClass>Graphic_Single</graphicClass> </graphicData>
+    <statBases>
+      <Mass>9</Mass>
+     <WorkToMake>70000</WorkToMake>
+      <MaxHitPoints>350</MaxHitPoints>
+      <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.00</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>25</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+      <JumpRange>12.5</JumpRange>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.8</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>DRNTF_Apparel_Spacer</li>
+    </thingCategories>
+    <apparel>
+	<tags>
+		<li>DRNTF_Apparel_Spacer</li>
+		<li>Psychic</li>
+		<li>EVA</li>
+		<li>Spacer</li>
+	</tags>
+     <wornGraphicPath>Things/Kurin/Apparel/Spacer/CygnusArmor/Texture</wornGraphicPath>
+			<layers>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+			    <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>				
+			</bodyPartGroups>
+    </apparel>
+    <recipeMaker>
+	  <researchPrerequisites>
+        <li>ReconArmor</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers Inherit="False">
+        <li>DRNTF_ElectricTailoringBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Plasteel>70</Plasteel>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>30</ammoCountPerCharge>
+        <baseReloadTicks>80</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Jump</verbClass>
+        <label>jump</label>
+        <commandIcon>Things/Apparel/ChangWol</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.25</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    </thingDef>
+
+
+<!-- Cygnus Helmet -->
+<thingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>DRNTF_CygnusHelmet</defName>
+    <label>cygnus helmet</label>
+    <techLevel>Spacer</techLevel>
+    <description>A carbon crystalline fiber jumpsuit for military personnel. It is light and thin, but surprisingly sturdy.</description>
+    <graphicData> <texPath>Things/Kurin/Apparel/Spacer/CygnusHelmet/Texture</texPath>
+    <graphicClass>Graphic_Single</graphicClass> </graphicData>
+    <statBases>
+      <Mass>1.8</Mass>
+     <WorkToMake>29000</WorkToMake>
+		<MaxHitPoints>300</MaxHitPoints>
+        <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+        <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+        <ArmorRating_Heat>1.00</ArmorRating_Heat>
+		<Insulation_Cold>50</Insulation_Cold>
+		<Insulation_Heat>25</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+	<thingCategories>
+      <li>DRNTF_Apparel_Spacer</li>
+    </thingCategories>
+	<equippedStatOffsets>
+      <AimingDelayFactor>-0.15</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+	<tags>
+		<li>DRNTF_Apparel_Spacer</li>
+		<li>Psychic</li>
+		<li>EVA</li>
+		<li>Spacer</li>
+	</tags>
+     <wornGraphicPath>Things/Kurin/Apparel/Spacer/CygnusHelmet/Texture</wornGraphicPath>
+    </apparel>
+    <recipeMaker>
+	  <researchPrerequisites>
+        <li>ReconArmor</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers Inherit="False">
+        <li>DRNTF_ElectricTailoringBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>15</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>15</Plasteel>
+    </costList>
+    </thingDef>
+
+</Defs>

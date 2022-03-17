@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_TraditionalBodyMakeableBase" ParentName="DRNTF_ApparelMakeableBase" Abstract="True">
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+	</graphicData>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.5</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+	  <Beauty>3</Beauty>
+    </statBases>
+	<apparel>
+		<layers>
+			<li>Middle</li>
+		</layers>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+			<li>Arms</li>
+		</bodyPartGroups>
+		<gender>Female</gender>
+	</apparel>
+	<costStuffCount>60</costStuffCount>
+</ThingDef>
+
+<!--================================================== Regular ==================================================-->
+	<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_TraditionalBodyRegularMakeableBase" ParentName="DRNTF_TraditionalBodyMakeableBase" Abstract="True">
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<apparel>
+			<tags>
+				<li>ApparelDRNTFRefugee</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>DRNTF_Apparel_Traditional_Regular</li>
+		</thingCategories>
+	</ThingDef>
+	
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_TraditionalBodyRegularMakeableBase_NoColor" ParentName="DRNTF_TraditionalBodyRegularMakeableBase" Abstract="True">
+	<followStuffColor>false</followStuffColor>
+</ThingDef>
+	
+	
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_TraditionalBodyRegularMakeableBase_NoColor">
+	<defName>DRNTF_FancyDress</defName>
+	<label>Traditional Kurin fancy dress</label>
+	<description>A fancy traditional Kurin dress. Perfect for social gatherings.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Traditional/FancyDress/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Kurin/Apparel/Traditional/FancyDress/Texture</wornGraphicPath>
+	</apparel>
+	<equippedStatOffsets>
+		<SocialImpact>0.1</SocialImpact>
+		<TradePriceImprovement>0.1</TradePriceImprovement>
+	</equippedStatOffsets>
+</ThingDef>
+
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_TraditionalBodyRegularMakeableBase">
+	<defName>DRNTF_SimpleDress</defName>
+	<label>Traditional Kurin simple dress</label>
+	<description>A simple traditional Kurin dress. It's simple design does not hinder work tasks.</description>
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Kurin/Apparel/Traditional/SimpleDress/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Kurin/Apparel/Traditional/SimpleDress/Texture</wornGraphicPath>
+	</apparel>
+	<equippedStatOffsets>
+		<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+	</equippedStatOffsets>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+</ThingDef>
+
+
+<!--================================================== Noble ==================================================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_TraditionalBodyNobleMakeableBase" ParentName="DRNTF_TraditionalBodyMakeableBase" Abstract="True">
+	<recipeMaker>
+		<researchPrerequisite>NobleApparel</researchPrerequisite>
+	</recipeMaker>
+	<statBases>
+		<Beauty>4</Beauty>
+	</statBases>
+	<apparel>
+		<tags>
+			<li>Royal</li>
+			<li>RoyalTier5</li>
+		</tags>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Traditional_Noble</li>
+	</thingCategories>
+</ThingDef>
+	
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_TraditionalBodyNobleMakeableBase_NoColor" ParentName="DRNTF_TraditionalBodyNobleMakeableBase" Abstract="True">
+	<followStuffColor>false</followStuffColor>
+</ThingDef>
+
+
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_TraditionalBodyNobleMakeableBase_NoColor">
+	<defName>DRNTF_LuxuryDress</defName>
+	<label>Traditional Nobel Kurin luxury dress</label>
+	<description>A bold stating brown see-through dress. Shows off your status as an esquire.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Traditional/LuxuryDress/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Kurin/Apparel/Traditional/LuxuryDress/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_TraditionalBodyNobleMakeableBase_NoColor">
+	<defName>DRNTF_CuteDress</defName>
+	<label>Traditional Nobel Kurin cute dress</label>
+	<description>A very cute dress to wear at a fun festival. Shows off your status as an esquire.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Traditional/CuteDress/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Kurin/Apparel/Traditional/CuteDress/Texture</wornGraphicPath>
+	</apparel>
+	<equippedStatOffsets>
+		<SocialImpact>0.15</SocialImpact>
+		<TradePriceImprovement>0.15</TradePriceImprovement>
+	</equippedStatOffsets>
+</ThingDef>
+
+
+<!--================================================== Royal ==================================================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_TraditionalBodyRoyalMakeableBase" ParentName="DRNTF_TraditionalBodyMakeableBase" Abstract="True">
+	<recipeMaker>
+		<researchPrerequisite>RoyalApparel</researchPrerequisite>
+	</recipeMaker>
+	<statBases>
+		<Beauty>6</Beauty>
+	</statBases>
+	<costList>
+		<DevilstrandCloth>25</DevilstrandCloth>
+	</costList>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<tags>
+			<li>DRNTFRefugee_Apparel_Royal</li>
+			<li>Psychic</li>
+		</tags>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Traditional_Royal</li>
+	</thingCategories>
+	<equippedStatOffsets>
+		<SocialImpact>0.2</SocialImpact>
+		<TradePriceImprovement>0.2</TradePriceImprovement>
+	    <PsychicSensitivity>0.10</PsychicSensitivity>
+        <PsychicEntropyRecoveryRate>1</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+</ThingDef>
+
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_TraditionalBodyRoyalMakeableBase_NoColor" ParentName="DRNTF_TraditionalBodyRoyalMakeableBase" Abstract="True">
+	<followStuffColor>false</followStuffColor>
+</ThingDef>
+	
+	
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_TraditionalBodyRoyalMakeableBase">
+	<defName>DRNTF_WhiteDress</defName>
+	<label>Traditional Royal Kurin white dress</label>
+	<description>A very attractive white dress with an open skirt concept. Fit for a royal.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Traditional/WhiteDress/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Kurin/Apparel/Traditional/WhiteDress/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_TraditionalBodyRoyalMakeableBase_NoColor">
+	<defName>DRNTF_BlackDress</defName>
+	<label>Traditional Royal Kurin black dress</label>
+	<description>A very attractive black dress with an open skirt concept. Fit for a royal.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Traditional/BlackDress/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Kurin/Apparel/Traditional/BlackDress/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+
+<!--================================================== Traditional Shell ==================================================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_TraditionalShellMakeableBase" ParentName="DRNTF_ApparelMakeableBase" Abstract="True">
+    <costStuffCount>150</costStuffCount>
+	<statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+	  <Beauty>5</Beauty>
+    </statBases>
+    <apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+      <layers>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Traditional</li>
+	</thingCategories>
+</ThingDef>
+
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_TraditionalShellMakeableBase">
+	<defName>DRNTF_TraditionalCoat</defName>
+	<label>Traditional Kurin coat</label>
+	<description>A traditional coat for Kurins. Keeps the wearer cool in the summer and warm in the winter.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Traditional/TraditionalCoat/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Kurin/Apparel/Traditional/TraditionalCoat/Texture</wornGraphicPath>
+	</apparel>
+	<equippedStatOffsets>
+		<SocialImpact>0.1</SocialImpact>
+	</equippedStatOffsets>
+</ThingDef>
+
+</Defs>
+

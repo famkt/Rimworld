@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Install Prosthetic Tail -->
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>DRNTF_InstallFakeTail</defName>
+    <label>install fake Prosthetic tail</label>
+    <description>Install a Prosthetic kurin tail.</description>
+    <jobString>Installing Prosthetic kurin tail.</jobString>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<recipeUsers Inherit="False">
+      <li>DRNTF_Race</li>
+    </recipeUsers>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>DRNTF_FakeTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+	  </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<thingDefs>
+			<li>DRNTF_FakeTail</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRNTF_TailA</li>
+	  <li>DRNTF_TailB</li>
+	  <li>DRNTF_TailC</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRNTF_FakeTail</addsHediff>
+  </RecipeDef>
+  
+<!-- Install Bionic Ear -->
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>DRNTF_InstallBionicEar</defName>
+    <label>install bionic kurin ear</label>
+    <description>Install a bionic kurin ear.</description>
+    <jobString>Installing bionic kurin ear.</jobString>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<recipeUsers Inherit="False">
+      <li>DRNTF_Race</li>
+    </recipeUsers>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>DRNTF_BionicEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+	  </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<thingDefs>
+			<li>DRNTF_BionicEar</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRNTF_Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRNTF_BionicEar</addsHediff>
+  </RecipeDef>  
+
+<!-- Install Bionic Tail -->
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>DRNTF_InstallBionicTail</defName>
+    <label>install bionic kurin tail</label>
+    <description>Install a bionic kurin tail.</description>
+    <jobString>Installing bionic kurin tail..</jobString>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<recipeUsers Inherit="False">
+      <li>DRNTF_Race</li>
+    </recipeUsers>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>DRNTF_BionicTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+	  </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<thingDefs>
+			<li>DRNTF_BionicTail</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>DRNTF_TailA</li>
+	  <li>DRNTF_TailB</li>
+	  <li>DRNTF_TailC</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRNTF_BionicTail</addsHediff>
+  </RecipeDef>
+</Defs>
+

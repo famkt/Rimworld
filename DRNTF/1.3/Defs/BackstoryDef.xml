@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--==========유년기==========-->
+	<AlienRace.BackstoryDef Name="DRNTF_BaseBackstory" Abstract="True">
+		<disallowedTraits>
+			<!--<li>
+				<defName>NaturalMood</defName>
+				<degree>-1</degree>
+			</li>
+			<li>
+				<defName>NaturalMood</defName>
+				<degree>-2</degree>
+			</li>
+			<li>
+				<defName>Beauty</defName>
+				<degree>-1</degree>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Beauty</defName>
+				<degree>-2</degree>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Xenophobia</defName>
+				<degree>1</degree>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>SpeedOffset</defName>
+				<degree>-1</degree>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Industriousness</defName>
+				<degree>-1</degree>
+				<chance>100</chance>
+			</li>			
+			<li>
+				<defName>Industriousness</defName>
+				<degree>-2</degree>
+				<chance>100</chance>
+			</li>-->		
+		</disallowedTraits>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Female</bodyTypeMale>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<spawnCategories>
+			<li>DRNTFSlave</li>
+			<li>DRNTFPlayerAbandoned</li>
+			<li>DRNTFRefugee</li>
+			<li>DRNTFWild</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<!--고아-->
+	<AlienRace.BackstoryDef ParentName="DRNTF_BaseBackstory">
+		<defName>DRNTF_BackstoryChild_01</defName>
+		<title>Kurin Maiko</title>
+		<titleShort>Maiko</titleShort>
+		<baseDescription>[PAWN_nameDef] spent her days training as a Maiko, there [PAWN_pronoun] lived a sheltered life while basic home maker skills to better serve the needs of her patron. [PAWN_nameDef].</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<!--<li>
+			<defName>Cooking</defName>
+			<amount>4</amount>
+			</li>
+			<li>
+			<defName>Medicine</defName>
+			<amount>2</amount>
+			</li>
+			<li>
+			<defName>Intellectual</defName>
+			<amount>2</amount>
+			</li>
+			<li>
+			<defName>Plants</defName>
+			<amount>2</amount>
+			</li>
+			<li>
+			<defName>Crafting</defName>
+			<amount>2</amount>
+			</li>
+			<li>
+			<defName>Animals</defName>
+			<amount>2</amount>
+			</li>
+			<li>
+			<defName>Artistic</defName>
+			<amount>4</amount>
+			</li>
+			<li>
+			<defName>Social</defName>
+			<amount>4</amount>
+			</li>-->
+		</skillGains>
+		<spawnCategories>
+			<li>DRNTFStory</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<!--<DRNTF.BackstoryDef>
+		<defName>DRNTF_BackstoryChild_01</defName>
+		<baseDescription>[PAWN_nameDef] was born in a tribe.</baseDescription>
+		<title>Kurin Maiko</title>
+		<titleShort>Maiko</titleShort>
+		<slot>Childhood</slot>
+		<categoryName>Tribal</categoryName>
+	</DRNTF.BackstoryDef>-->
+	
+	<AlienRace.BackstoryDef ParentName="DRNTF_BaseBackstory">
+		<defName>DRNTF_BackstoryAdult_01</defName>
+		<title>Kurin Kadōka </title>
+		<titleShort>Kadōka</titleShort>
+		<baseDescription>[PAWN_nameDef]'s patron greatly enjoyed botany. They spent many days together engaged in ikebana and enjoyed stimulating conversations over a cup of tea, hand picked from the gardens.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<!--<li>
+			<defName>Plants</defName>
+			<amount>8</amount>
+			</li>
+			<li>
+			<defName>Intellectual</defName>
+			<amount>4</amount>
+			</li>-->
+		</skillGains>
+		<spawnCategories>
+			<li>DRNTFStory</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	
+	<!--<AlienRace.BackstoryDef ParentName="DRNTF_BaseBackstory">
+		<defName>DRNTF_BackstoryAdult_02</defName>
+		<title>Kurin Kaikei </title>
+		<titleShort>Kaikei</titleShort>
+		<baseDescription>[PAWN_nameDef]'s patron pursued sculpting. [PAWN_nameDef] and [PAWN_pronoun] her patron would scour the many rimworlds in search of the perfect boulder to sculpt the next masterpiece.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+			<defName>Mining</defName>
+			<amount>8</amount>
+			</li>
+			<li>
+			<defName>Artistic</defName>
+			<amount>4</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>DRNTFStory</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>-->
+
+</Defs>

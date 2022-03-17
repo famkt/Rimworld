@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LetterLabelWildKurinWanderIn>Abandoned Kurin wanders in</LetterLabelWildKurinWanderIn>
+  <LetterWildKurinWanderIn>A Kurin long abandoned by her patron has wandered into the area. Fearful of human contact, she keeps her distance.\n\nYou can attempt to tame or arrest her.</LetterWildKurinWanderIn>
+  <LetterLabelKurinPodCrash>Kurin pod crash</LetterLabelKurinPodCrash>
+  <LetterKurinPodCrash>Somebody dropped a pod here! An injured Kurin climbs out.\n\nIt appears to have been abandoned by its previous owner.</LetterKurinPodCrash>
+  <LetterLabelKurinWanderIn>Kurin Joins!</LetterLabelKurinWanderIn>
+  <LetterKurinWanderIn>A Kurin, abandoned or lost, has wandered into the area.\n\nLonging for human contact, she has joined the colony. She is willing to contribute, but will not leave voluntarily. If you don't want her, you can banish her, sell her into slavery, or simply kill her. However, your other colonists may find this disturbing.</LetterKurinWanderIn>
+</LanguageData>

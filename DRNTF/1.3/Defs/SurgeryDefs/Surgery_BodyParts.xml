@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Prosethtic Tail -->
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>DRNTF_FakeTail</defName>
+		<label>fake kurin tail</label>
+		<description>A fake kurin tail.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Steel>40</Steel>
+			<Cloth>60</Cloth>
+		</costList>
+	</ThingDef>
+
+<!-- Bionic Tail -->
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>DRNTF_BionicTail</defName>
+    <label>bionic kurin tail</label>
+    <description>An advance kurin tail.</description>
+    <!--<descriptionHyperlinks><RecipeDef>DRNTF_InstallBionicTail</RecipeDef></descriptionHyperlinks>-->
+    <costList>
+      <Plasteel>40</Plasteel>
+	  <Cloth>60</Cloth>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+	<statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+
+<!-- Bionic Ear -->
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>DRNTF_BionicEar</defName>
+    <label>bionic kurin ear</label>
+    <description>An advanced bionic kurin ear.</description>
+    <descriptionHyperlinks><RecipeDef>DRNTF_InstallBionicEar</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>20</Plasteel>
+	  <Cloth>10</Cloth>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+</Defs>

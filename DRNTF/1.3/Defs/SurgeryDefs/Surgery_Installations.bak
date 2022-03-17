@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Prosthetic wing -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DRNTF_FakeTail</defName>
+    <label>prosthetic harpy wing</label>
+    <labelNoun>a prosthetic harpy wing</labelNoun>
+    <description>An installed prosthetic harpy wing.</description>
+    <descriptionHyperlinks><ThingDef>SimpleProstheticWingHarpy</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>SimpleProstheticWingHarpy</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.60</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>DRNTF_FakeTail</defName>
+    <label>fake kurin tail</label>
+    <description>간단한 가짜 꼬리입니다. 자세히 보면 뭔가 어색합니다.</description>
+    <descriptionHyperlinks><RecipeDef>InstallSimpleProstheticWingHarpy</RecipeDef></descriptionHyperlinks>
+	<costList>
+		<Steel>25</Steel>
+		<Cloth>50</Cloth>
+	</costList>
+	<statBases>
+		<WorkToMake>13000</WorkToMake>
+		<Mass>0.1</Mass>
+	</statBases>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <defName>DRNTF_InstallFakeTail</defName>
+    <label>install prosthetic harpy wing</label>
+    <description>Install a prosthetic harpy wing.</description>
+    <descriptionHyperlinks><ThingDef>SimpleProstheticWingHarpy</ThingDef></descriptionHyperlinks>
+    <jobString>Installing prosthetic harpy wing.</jobString>
+	<workerClass>SyrHarpy.Recipe_InstallPart</workerClass>
+	<recipeUsers Inherit="False">
+      <li>Harpy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SimpleProstheticWingHarpy</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SimpleProstheticWingHarpy</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>WingHarpy</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SimpleProstheticWingHarpy</addsHediff>
+  </RecipeDef>
+  
+<RecipeDef ParentName="SurgeryFlesh">
+	<defName>DRNTF_InstallFakeTail</defName>
+	<label>install fake kurin tail</label>
+	<description>Install a fake kurin tail.</description>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<jobString>Installing fake kurin tail.</jobString>
+	<workAmount>2000</workAmount>
+	<skillRequirements>
+		<Medicine>5</Medicine>
+	</skillRequirements>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>Medicine</li>
+				</categories>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DRNTF_FakeTail</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>Medicine</li>
+		</categories>
+		<thingDefs>
+			<li>DRNTF_FakeTail</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>DRNTF_Tail</li>
+	</appliedOnFixedBodyParts>
+	<addsHediff>DRNTF_FakeTail</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+	<defName>DRNTF_InstallBionicEar</defName>
+	<label>install bionic kurin ear</label>
+	<description>Install a bionic kurin ear.</description>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<jobString>Installing bionic kurin ear.</jobString>
+	<workAmount>2000</workAmount>
+	<skillRequirements>
+		<Medicine>5</Medicine>
+	</skillRequirements>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>Medicine</li>
+				</categories>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DRNTF_BionicEar</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>Medicine</li>
+		</categories>
+		<thingDefs>
+			<li>DRNTF_BionicEar</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>DRNTF_Ear</li>
+	</appliedOnFixedBodyParts>
+	<addsHediff>DRNTF_BionicEar</addsHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryFlesh">
+	<defName>DRNTF_InstallBionicTail</defName>
+	<label>install bionic kurin tail</label>
+	<description>Install a bionic kurin tail.</description>
+	<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+	<jobString>Installing bionic kurin tail.</jobString>
+	<workAmount>2000</workAmount>
+	<skillRequirements>
+		<Medicine>5</Medicine>
+	</skillRequirements>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>Medicine</li>
+				</categories>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DRNTF_BionicTail</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>Medicine</li>
+		</categories>
+		<thingDefs>
+			<li>DRNTF_BionicTail</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>DRNTF_Tail</li>
+	</appliedOnFixedBodyParts>
+	<addsHediff>DRNTF_BionicTail</addsHediff>
+</RecipeDef>
+</Defs>

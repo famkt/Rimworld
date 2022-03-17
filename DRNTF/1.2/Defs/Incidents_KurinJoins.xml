@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>KurinPodCrash</defName>
+    <label>Kurin pod crash</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>DRNTF.IncidentWorker_KurinPodCrash</workerClass>
+    <baseChance>0.01</baseChance>
+    <minRefireDays>120</minRefireDays>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>KurinWanderIn</defName>
+    <label>Kurin wander in</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>DRNTF.IncidentWorker_KurinWanderIn</workerClass>
+    <baseChance>0.01</baseChance>
+    <minRefireDays>120</minRefireDays>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>WildKurinWanderIn</defName>
+    <label>Wild Kurin wander in</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>DRNTF.IncidentWorker_AbandonedKurinWanderIn</workerClass>
+    <baseChance>0.7</baseChance>
+    <minRefireDays>60</minRefireDays>
+  </IncidentDef>
+</Defs>

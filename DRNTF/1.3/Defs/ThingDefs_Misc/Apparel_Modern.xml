@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef Class="DRNTF.CustomThingDef"  Name="DRNTF_ModernBodyMakeableBase" ParentName="DRNTF_ApparelMakeableBase" Abstract="True">
+</ThingDef>
+
+ <!--================================================== Regular ==================================================-->
+<ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ModernBodyRegularMakeableBase" ParentName="DRNTF_ModernBodyMakeableBase" Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+	<apparel>
+		<layers>
+			<li>Middle</li>
+		</layers>
+		<bodyPartGroups>
+			<li>Torso</li>
+		</bodyPartGroups>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Modern_Regular</li>
+	</thingCategories>
+	<equippedStatOffsets>
+		<SocialImpact>0.1</SocialImpact>
+		<TradePriceImprovement>0.1</TradePriceImprovement>
+	</equippedStatOffsets>
+</ThingDef> 
+
+
+<!--T Shirt-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyRegularMakeableBase">
+	<defName>DRNTF_Shirt</defName>
+	<description>A slightly larger shirt with a collar and buttons. Comfortable to wear unless it is very hot.</description>
+	<label>kurin shirt</label>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/Shirt/Texture</texPath>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2700</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costStuffCount>45</costStuffCount>
+	<apparel>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/Shirt/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<!--Shirt-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyRegularMakeableBase">
+	<defName>DRNTF_TShirt</defName>
+	<label>kurin T-shirt</label>
+	<description>A t-shirt for hot summer wear. Do not make it white!</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/TShirt/Texture</texPath>
+	</graphicData>
+	<costStuffCount>40</costStuffCount>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1600</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<apparel>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/TShirt/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<!--Pajamas-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyRegularMakeableBase">
+	<defName>DRNTF_Pajamas</defName>
+	<label>kurin pajamas</label>
+	<description>A very comfortable set of pajama. Guarantees a good night's sleep for Kurins who suffers from insomnia.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/Pajamas/Texture</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/Pajamas/Texture</wornGraphicPath>
+	</apparel>
+	<costStuffCount>50</costStuffCount>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>1600</WorkToMake>
+		<Mass>0.15</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1.5</EquipDelay>
+	</statBases>
+</ThingDef>
+
+<!--OnePieceDress-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyRegularMakeableBase">
+	<defName>DRNTF_OnePieceDress</defName>
+	<label>kurin one piece dress</label>
+	<description>A moderately pure light dress.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/OnePieceDress/Texture</texPath>
+	</graphicData>
+	<costList>
+		<Cloth>25</Cloth>
+	</costList>
+	<costStuffCount>50</costStuffCount>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/OnePieceDress/Texture</wornGraphicPath>
+	</apparel>
+	<statBases>
+		<MaxHitPoints>125</MaxHitPoints>
+		<WorkToMake>2000</WorkToMake>
+		<Mass>0.35</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+</ThingDef>
+
+<!--WorkJumpsuit-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyMakeableBase">
+	<defName>DRNTF_WorkJumpsuit</defName>
+	<label>kurin work jumpsuit</label>
+	<description>A work suit equipped with many pockets for storing various tools and parts. It's heavy materials protects the wearer against oil stains or sparks.</description>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/WorkJumpsuit/Texture</texPath>
+	</graphicData>
+	<costStuffCount>70</costStuffCount>
+	<statBases>
+		<MaxHitPoints>150</MaxHitPoints>
+		<WorkToMake>3000</WorkToMake>
+		<Mass>0.35</Mass>
+		<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<layers>
+			<li>Middle</li>
+		</layers>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+			<li>Arms</li>
+			<li>Feet</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/WorkJumpsuit/Texture</wornGraphicPath>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Modern_Regular</li>
+	</thingCategories>
+	<equippedStatOffsets>
+		<WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+	</equippedStatOffsets>
+</ThingDef>
+	
+	
+ <!--================================================== Noble ==================================================-->
+ <ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ModernBodyNobleMakeableBase" ParentName="DRNTF_ModernBodyMakeableBase" Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>NobleApparel</researchPrerequisite>
+    </recipeMaker>
+	<apparel>
+		<tags>
+			<li>Royal</li>
+			<li>RoyalTier5</li>
+		</tags>
+		<layers>
+			<li>Middle</li>
+		</layers>
+		<bodyPartGroups>
+			<li>Torso</li>
+		</bodyPartGroups>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Modern_Noble</li>
+	</thingCategories>
+
+	<equippedStatOffsets>
+		<SocialImpact>0.15</SocialImpact>
+		<TradePriceImprovement>0.15</TradePriceImprovement>
+	</equippedStatOffsets>
+	
+</ThingDef> 
+
+ <!--CasualWear-->
+ <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyNobleMakeableBase">
+	<defName>DRNTF_CasualWear</defName>
+	<label>kurin casual wear</label>
+	<description>A popular casual wear for Kurin. Combining both comfort and style.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/CasualWear/Texture</texPath>
+	</graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1600</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/CasualWear/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<!--NunDress-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyNobleMakeableBase">
+	<defName>DRNTF_NunDress</defName>
+	<label>kurin nun dress</label>
+	<description>A nun's dress. Its tight robes makes it easier to tend to wounds without being hindered.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/NunDress/Texture</texPath>
+	</graphicData>
+	<costList>
+		<DevilstrandCloth>25</DevilstrandCloth>
+	</costList>
+	<costStuffCount>75</costStuffCount>
+	<statBases>
+		<MaxHitPoints>150</MaxHitPoints>
+		<WorkToMake>6000</WorkToMake>
+		<Mass>0.45</Mass>
+		<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+			<li>Arms</li>
+			<li>Neck</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/NunDress/Texture</wornGraphicPath>
+	</apparel>
+	<equippedStatOffsets>
+		<MedicalTendSpeed>0.1</MedicalTendSpeed>
+		<MedicalTendQuality>0.1</MedicalTendQuality>
+		<MedicalSurgerySuccessChance>0.10</MedicalSurgerySuccessChance>
+	</equippedStatOffsets>
+</ThingDef>
+		
+<!--Open Back Knit-->
+ <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyNobleMakeableBase">
+	<defName>DRNTF_OpenBackKnit</defName>
+	<label>kurin open back knit</label>
+	<description>A knit with one large dig. Kurins still debate about how to wear this.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/OpenBackKnit/Texture</texPath>
+	</graphicData>
+	<costList>
+		<Cloth>25</Cloth>
+	</costList>
+	<costStuffCount>50</costStuffCount>
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<statBases>
+		<MaxHitPoints>125</MaxHitPoints>
+		<WorkToMake>6000</WorkToMake>
+		<Mass>0.30</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/OpenBackKnit/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<!--Open Back Knit-->
+ <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyNobleMakeableBase">
+	<defName>DRNTF_OpenFrontKnit</defName>
+	<label>kurin open front knit</label>
+	<description>A knit with one large dig. Kurins still debate about how to wear this.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/OpenFrontKnit/Texture</texPath>
+	</graphicData>
+	<costList>
+		<Cloth>25</Cloth>
+	</costList>
+	<costStuffCount>50</costStuffCount>
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<statBases>
+		<MaxHitPoints>125</MaxHitPoints>
+		<WorkToMake>6000</WorkToMake>
+		<Mass>0.30</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/OpenFrontKnit/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<!--Open Shoulder Knit-->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyNobleMakeableBase">
+	<defName>DRNTF_OpenShoulderKnit</defName>
+	<label>kurin open shoulder knit</label>
+	<description>A cute open shoulder knit. Comfortable and soft, it is good for sleeping with.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/OpenShoulderKnit/Texture</texPath>
+	</graphicData>
+	<costList>
+		<Cloth>25</Cloth>
+	</costList>
+	<costStuffCount>50</costStuffCount>
+	<statBases>
+		<MaxHitPoints>125</MaxHitPoints>
+		<WorkToMake>6000</WorkToMake>
+		<Mass>0.35</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/OpenShoulderKnit/Texture</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+ <!--================================================== Royal ==================================================-->
+ <ThingDef Class="DRNTF.CustomThingDef" Name="DRNTF_ModernBodyRoyalMakeableBase" ParentName="DRNTF_ModernBodyMakeableBase" Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>RoyalApparel</researchPrerequisite>
+    </recipeMaker>
+	<apparel>
+		<tags>
+			<li>Psychic</li>
+		</tags>
+		<layers>
+			<li>Middle</li>
+		</layers>
+		<bodyPartGroups>
+			<li>Torso</li>
+		</bodyPartGroups>
+	</apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Modern_Royal</li>
+	</thingCategories>
+</ThingDef> 
+
+<!--Gothic Dress-->
+ <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernBodyRoyalMakeableBase">
+	<followStuffColor>false</followStuffColor>
+	<defName>DRNTF_GothicDress</defName>
+	<label>kurin gothic dress</label>
+	<description>An antique looking dress. An aura of royalty emanates from it.</description>
+	<graphicData>
+		<texPath>Things/Kurin/Apparel/Modern/GothicDress/Texture</texPath>
+	</graphicData>
+	<costList>
+		<DevilstrandCloth>25</DevilstrandCloth>
+	</costList>
+	<costStuffCount>75</costStuffCount>
+	<statBases>
+		<MaxHitPoints>150</MaxHitPoints>
+		<WorkToMake>8000</WorkToMake>
+		<Mass>2</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+	</statBases>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+			<li>Arms</li>
+			<li>Neck</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Kurin/Apparel/Modern/GothicDress/Texture</wornGraphicPath>
+		<tags>
+			<li>DRNTFRefugee_Apparel_Royal</li>
+			<li>Psychic</li>
+		</tags>
+	</apparel>
+    <equippedStatOffsets>
+		<SocialImpact>0.2</SocialImpact>
+		<TradePriceImprovement>0.2</TradePriceImprovement>
+		<PsychicSensitivity>0.10</PsychicSensitivity>
+		<PsychicEntropyRecoveryRate>1</PsychicEntropyRecoveryRate>
+		<Beauty>0.5</Beauty>
+    </equippedStatOffsets>
+</ThingDef>
+</Defs>
+

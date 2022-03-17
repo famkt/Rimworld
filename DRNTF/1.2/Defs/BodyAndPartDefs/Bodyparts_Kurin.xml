@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	<BodyPartDef>
+   	 <defName>DRNTF_Tail</defName>
+   	 <label>tail</label>
+   	 <hitPoints>30</hitPoints>
+   	 <frostbiteVulnerability>3</frostbiteVulnerability>
+   	 <skinCovered>true</skinCovered>
+   	 <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+   	 <defName>DRNTF_Ear</defName>
+   	 <label>ear</label>
+   	 <hitPoints>12</hitPoints>
+   	 <frostbiteVulnerability>5</frostbiteVulnerability>
+   	 <skinCovered>true</skinCovered>
+   	 <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>HearingSource</li>
+    </tags>
+	</BodyPartDef>
+	
+</Defs>

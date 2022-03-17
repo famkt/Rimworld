@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ScenarioDef Name="Abandoned">
+	<defName>DRNTFAbandoned</defName>
+	<label>Abandoned</label>
+	<description>The last you remembered was climbing into a comfortable bed after a warm shower. Now you've awoken in a drop pod crashing into a distant planet. You're naked, alone, and totally unprepared. Can you survive?.</description>
+	<scenario>
+		<summary>Abandoned, can you survive this unforgiving world?</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>DRNTF_FactionAbandoned</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>1</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+				<method>DropPods</method>
+			</li>
+			<!-- Player pawns modifiers -->
+			<li Class="ScenPart_ForcedHediff">
+			  <def>ForcedHediff</def>
+			  <visible>false</visible>
+			  <context>PlayerStarter</context>
+			  <chance>1.0</chance>
+			  <hediff>CryptosleepSickness</hediff>
+			  <hideOffMap>true</hideOffMap>
+			  <severityRange>1~1</severityRange>
+			</li>
+			
+			<!-- Game start dialog -->
+			<li Class="ScenPart_GameStartDialog">
+			  <def>GameStartDialog</def>
+			  <text>Born as a perfect mate in a glitterworld, you enjoyed many luxuries other worlds could only dream of.\n\nAbandoned and unacustomed to the violence and struggles of this harsh new life, you look towards an uncertain future...</text>
+			  <closeSound>GameStartSting</closeSound>
+			</li>
+		</parts>
+	</scenario>
+</ScenarioDef>
+
+<ScenarioDef Name="Runaways">
+	<defName>DRNTFRunaways</defName>
+	<label>Runaways</label>
+	<description>Many would sell themselves into slavery to enjoy the comforts of a glitterworld. You wanted more - freedom. With another group of Kurins, you hatched a plot to make an escape to a distant rimworld.</description>
+	<scenario>
+		<summary>Fed up with a life of servitude, a group of Kurins decide to runaway.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>DRNTF_FactionRunaway</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>3</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+				<method>DropPods</method>
+			</li>
+			<!-- Player pawns modifiers -->
+			<li Class="ScenPart_ForcedHediff">
+			  <def>ForcedHediff</def>
+			  <visible>false</visible>
+			  <context>PlayerStarter</context>
+			  <chance>1.0</chance>
+			  <hediff>CryptosleepSickness</hediff>
+			  <hideOffMap>true</hideOffMap>
+			  <severityRange>1~1</severityRange>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>100</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineUltratech</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>WoodLog</thingDef>
+			  <count>300</count>
+			</li>  			
+			<li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>Steel</thingDef>
+			  <count>450</count>
+			</li>	
+			<li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>Gold</thingDef>
+			  <count>30</count>
+			</li>		
+			<li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>ComponentIndustrial</thingDef>
+			  <count>30</count>
+			</li>			
+			<li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>Gun_ChargeRifle</thingDef>
+			  <count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+			  <def>StartingThing_Defined</def>
+			  <thingDef>MeleeWeapon_Knife</thingDef>
+			  <stuff>Plasteel</stuff>
+			</li>
+			<!-- Game start dialog -->
+			<li Class="ScenPart_GameStartDialog">
+			  <def>GameStartDialog</def>
+			  <text>Born as a perfect mate in a glitterworld, you enjoyed many luxuries other worlds could only dream of.\n\nAbandoned and unacustomed to the violence and struggles of this harsh new life, you look towards an uncertain future...</text>
+			  <closeSound>GameStartSting</closeSound>
+			</li>
+		</parts>
+	</scenario>
+</ScenarioDef>
+</Defs>

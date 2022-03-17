@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Prosethtic Tail -->
+<HediffDef ParentName="AddedBodyPartBase">
+    <defName>DRNTF_FakeTail</defName>
+    <label>fake kurin tail</label>
+    <labelNoun>a fake kurin tail</labelNoun>
+    <description>this is a fake kurin tail.</description>
+    <spawnThingOnRemoved>DRNTF_FakeTail</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.00</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+</HediffDef>
+
+<!-- Bionic Tail -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DRNTF_BionicTail</defName>
+    <label>bionic kurin tail</label>
+    <labelNoun>a bionic kurin tail</labelNoun>
+    <description>this is a bionic kurin tail.</description>
+    <spawnThingOnRemoved>DRNTF_BionicTail</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+  
+
+<!-- Bionic Ear -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>DRNTF_BionicEar</defName>
+    <label>bionic kurin ear</label>
+    <labelNoun>a bionic kurin ear</labelNoun>
+    <description>this is a bionic kurin ear.</description>
+    <spawnThingOnRemoved>DRNTF_BionicEar</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+</Defs>

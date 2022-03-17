@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef ParentName="DiseaseBase">
+    <defName>DRNTF_NooseTrapHediff</defName>
+    <label>Snared</label>
+	<description>Knocks out anyone unfortunate enough to be snared.</description>
+    <labelNoun>snared</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>8000</min>
+          <max>10000</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThingDef class="NineTailedFox.K" ParentName="BuildingBase">
+    <defName>DRNTF_NooseTrap</defName>
+    <label>Noose Trap</label>
+    <description>A non-violent solution to a violent problem.</description>
+    <thingClass>DRNTF.NooseTrap</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/NooseTrap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2</Mass>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>-6</Beauty>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+    <costList>
+	  <Cloth>5</Cloth>
+    </costList>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+	  <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+	
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>true</trapDestroyOnSpring>
+      <expandHomeArea>false</expandHomeArea>
+	  <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+  </ThingDef>
+  
+  <ThingDef class="NineTailedFox.K" ParentName="BuildingBase">
+    <defName>DRNTF_NooseTrapMedium</defName>
+    <label>Medium Noose Trap</label>
+    <description>A non-violent solution to a violent problem.</description>
+    <thingClass>DRNTF.NooseTrapMedium</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/NooseTrap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2</Mass>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>-6</Beauty>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+    <costList>
+	  <Cloth>20</Cloth>
+    </costList>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+	  <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+	
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>true</trapDestroyOnSpring>
+      <expandHomeArea>false</expandHomeArea>
+	  <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+  </ThingDef>
+  
+  <ThingDef class="NineTailedFox.K" ParentName="BuildingBase">
+    <defName>DRNTF_NooseTrapLarge</defName>
+    <label>Large Noose Trap</label>
+    <description>A non-violent solution to a violent problem.</description>
+    <thingClass>DRNTF.NooseTrapLarge</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/NooseTrap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2</Mass>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>-6</Beauty>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+    <costList>
+	  <Cloth>25</Cloth>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+	  <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+	
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>true</trapDestroyOnSpring>
+      <expandHomeArea>false</expandHomeArea>
+	  <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef>
+    <defName>DRNTF_Abandoned</defName>
+    <label>Abandoned Kurin</label>
+	<pawnSingular>Abandoned Kurin</pawnSingular>
+    <pawnsPlural>Abandoned Kurin</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Abandoned Kurin</fixedName>
+    <factionIconPath>World/WorldObjects/Expanding/Sites/DownedRefugee</factionIconPath>
+    <techLevel>Neolithic</techLevel>
+	<colorSpectrum>
+		<li>(1, 0.7, 0.7)</li>
+	</colorSpectrum>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>DRNTFStory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <hidden>true</hidden>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <autoFlee>false</autoFlee>
+    <geneticVariance>1</geneticVariance>
+    <hairTags>
+      <li>Kurin</li>
+    </hairTags>
+  </FactionDef>
+
+</Defs>

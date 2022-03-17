@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+	    <value>
+	    	<li>DRNTF_FactionAbandoned</li>
+			<li>DRNTF_FactionRunaway</li>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
+        <value>
+            <li>
+                <categoryName>DRNTFPlayerAbandoned</categoryName>
+                <slot>Childhood</slot>
+            </li>
+			<li>
+                <categoryName>DRNTFRefugee</categoryName>
+                <slot>Childhood</slot>
+            </li>
+			<li>
+                <categoryName>DRNTFSlave</categoryName>
+                <slot>Childhood</slot>
+            </li>
+			<li>
+                <categoryName>DRNTFWild</categoryName>
+                <slot>Childhood</slot>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

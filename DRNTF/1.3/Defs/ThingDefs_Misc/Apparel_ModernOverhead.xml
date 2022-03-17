@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef Name="DRNTF_ModernOverheadMakeableBase" ParentName="DRNTF_ApparelMakeableBase" Abstract="True">
+	<recipeMaker>
+		<researchPrerequisite>ComplexClothing</researchPrerequisite>
+	</recipeMaker>
+</ThingDef>
+
+
+
+<!-- Scarf -->
+<ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernOverheadMakeableBase">
+    <defName>DRNTF_Scarf</defName>
+    <description>A warm scarf for Kurins.</description>
+    <label>Kurin scarf</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/ModernOverhead/Scarf/Texture</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>1200</WorkToMake>
+		<Mass>0.12</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>0.8</EquipDelay>
+	</statBases>
+    <apparel>
+      <bodyPartGroups>
+	    <li>Teeth</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <wornGraphicPath>Things/Kurin/Apparel/ModernOverhead/Scarf/Texture</wornGraphicPath>
+    </apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Modern_Overhead</li>
+	</thingCategories>
+  </ThingDef>
+  
+  <!-- Glasses -->
+  <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ArmorMachineableOverheadMakeableBase_NoColor">
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>20</costStuffCount>
+    <defName>DRNTF_Glasses</defName>
+    <description>Glasses to improve the effiency of Kurins.</description>
+    <label>Kurin glasses</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/ModernOverhead/Glasses/Texture</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>1200</WorkToMake>
+		<Mass>0.05</Mass>
+		<StuffEffectMultiplierArmor>0.0</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>0.8</EquipDelay>
+	</statBases>
+    <apparel>
+      <bodyPartGroups>
+	    <li>Eyes</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <wornGraphicPath>Things/Kurin/Apparel/ModernOverhead/Glasses/Texture</wornGraphicPath>
+    </apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Modern_Overhead</li>
+	</thingCategories>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+	<equippedStatOffsets>
+		<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+	</equippedStatOffsets>
+  </ThingDef>
+  
+  <!-- Summer Hat -->
+  <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernOverheadMakeableBase">
+    <defName>DRNTF_SummerHat</defName>
+    <description>A stylish hat to keep the sun off a Kurin's face.</description>
+    <label>Kurin Summer Hat</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/ModernOverhead/SummerHat/Texture</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+	    <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <wornGraphicPath>Things/Kurin/Apparel/ModernOverhead/SummerHat/Texture</wornGraphicPath>
+    </apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Modern_Overhead</li>
+	</thingCategories>
+  </ThingDef>
+  
+  <!-- WinterHat -->
+  <ThingDef Class="DRNTF.CustomThingDef" ParentName="DRNTF_ModernOverheadMakeableBase">
+    <defName>DRNTF_WinterHat</defName>
+    <description>A soft, thick cap. Great for keeping ears warm in the winter.</description>
+    <label>Kurin Winter Hat</label>
+    <graphicData>
+      <texPath>Things/Kurin/Apparel/ModernOverhead/WinterHat/Texture</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.07</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+	    <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <wornGraphicPath>Things/Kurin/Apparel/ModernOverhead/WinterHat/Texture</wornGraphicPath>
+    </apparel>
+	<thingCategories>
+		<li>DRNTF_Apparel_Modern_Overhead</li>
+	</thingCategories>
+  </ThingDef>
+</Defs>
+
