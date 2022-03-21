@@ -1,10 +1,9 @@
-# Rimworld
+# Rimworld Tinkering
 Art by GloomyLynx
-
-learning by modding Rimworld
 
 **Fix for Wildman event for custom races**<br/>
 Whenever a wildman event occurs, Rimworld ignores the custom race's backstories and randomly assigns a backstory from the entire pool of backstories. This is fixed by calling two seperate events. The first is the Wanderer join event, this is an event which respects a custom race's backstory. However, the wanderer will immediately join the player's faction and not act like a wildman. This is fixed by combining it with the Running Wild event which will cause a player's character to immediately revert to a wildman.
+
 
 **Ear Fix**<br/>
 <img src = "images/rimworld_DRNTF_legacy_ear.png" width = 200><br/>
@@ -13,9 +12,11 @@ The legacy version of Kurins had an issue with how the ears are rendered dependi
 <img src = "images/rimworld_DRNTF_fixed_ear.png" width = 200><br/>
 This has been fixed in this version
 
+
 **Cloth Colours**<br/>
 <img src = "images/rimworld_DRNTF_coloured_clothes.png" width = 200><br/>
 The legacy version colour for apparel was dependent on the texture. That means twenty apparel of the same type would share the same colour scheme. In this version, apparel now takes on the colour of the material it was created from. This is fully compatible with "Dubs Paint Shop"
+
 
 **Spacer Armour**<br/>
 <img src = "images/rimworld_DRNTF_spacer.png" width = 200><br/>
