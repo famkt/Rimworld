@@ -14,7 +14,7 @@ This has been fixed in this version
 
 
 **Cloth Colours**<br/>
-<img src = "images/rimworld_DRNTF_simple_dress.png"<br/>
+<img src = "images/rimworld_DRNTF_simple_dress.png"><br/>
 The legacy version colour for apparel was dependent on the texture. That means any character donning the above apparel would have the same colour .
 
 <img src = "images/rimworld_DRNTF_coloured_clothes.png" width = 200><br/>
