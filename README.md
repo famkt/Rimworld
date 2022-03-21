@@ -13,7 +13,10 @@ The legacy version of Kurins had an issue with how the ears are rendered dependi
 <img src = "images/rimworld_DRNTF_fixed_ear.png" width = 200><br/>
 This has been fixed in this version
 
-**Cloth Colours**
+**Cloth Colours**<br/>
+<img src = "images/rimworld_DRNTF_coloured_clothes.png" width = 200><br/>
+The legacy version colour for apparel was dependent on the texture. That means twenty apparel of the same type would share the same colour scheme. In this version, apparel now takes on the colour of the material it was created from. This is fully compatible with "Dubs Paint Shop"
 
-**Spacer Armour**
+**Spacer Armour**<br/>
+<img src = "images/rimworld_DRNTF_spacer.png" width = 200><br/>
 If the mod "Save Our Spaceship 2" is loaded. The file automatically patches the spacer suit to become an EVA suit to allow for space exploration.
